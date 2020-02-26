@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "This package deals with postman and openapi specs and tests",
   "main": "index.js",
-  "repository": "github.com:HuasoFoundries/postman_sync.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ffflabs/postman_sync.git"
+  },
   "author": "ffflabs <amenadiel@gmail.com>",
   "license": "MIT",
   "private": true,
