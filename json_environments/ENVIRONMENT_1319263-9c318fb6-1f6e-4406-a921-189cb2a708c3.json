@@ -1,0 +1,66 @@
+{
+  "id": "9c318fb6-1f6e-4406-a921-189cb2a708c3",
+  "name": "dbthor",
+  "values": [
+    {
+      "key": "crseedResponse",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "SEMILLA",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "trx_get_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "trx_carga_certificado",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "password_pfx",
+      "value": "santi210109",
+      "enabled": true
+    },
+    {
+      "key": "rut_cedente",
+      "value": "76986660-4",
+      "enabled": true
+    },
+    {
+      "key": "api_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "sii_token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "certificado_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "track_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}

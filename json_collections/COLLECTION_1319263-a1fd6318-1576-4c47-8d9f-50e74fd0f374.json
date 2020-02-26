@@ -1,0 +1,1014 @@
+{
+  "info": {
+    "_postman_id": "a1fd6318-1576-4c47-8d9f-50e74fd0f374",
+    "name": "api cesion 2020 Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "sign up",
+          "_postman_id": "5c9638d2-76c7-451c-bcf1-f0b3af691459",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \n  \"rut\":\"13233197-9\",\n  \"password\": \"felipe\",\n  \"name\":\"Felipe Figueroa\",\n  \"email\": \"ffigueroa@ctohm.com\"\n  \n  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/user",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","user"]
+            }
+          },
+          "response": [
+            {
+              "id": "b74744bd-0fe5-459e-93f9-51d0e6489d92",
+              "name": "sign up",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"dv\":\"7\",\n  \"rut\":\"15332262\",\n  \"password\": \"lolita\",\n  \"name\":\"fernandez\",\n  \"email\": \"dolores@ctohm.com\"\n  \n  \n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{api_cesion_2020}}/api/user",
+                  "host": ["{{api_cesion_2020}}"],
+                  "path": ["api","user"]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": {\n        \"identificador\": \"15332262\",\n        \"email\": \"dolores@ctohm.com\",\n        \"access_token\": \"qk1Z7qrJuaHjyhVItabmOxaSIbpftIqVuPH51fxnTgZzA50kMfymh4vaCrPm\"\n    }\n}"
+            },
+            {
+              "id": "cd1cfc3d-42ff-432e-9231-fe6ed133ac29",
+              "name": "sign up fff",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"dv\":\"9\",\n  \"rut\":\"13233197\",\n  \"password\": \"felipe\",\n  \"name\":\"ffigueroa\",\n  \"email\": \"ffigueroa@ctohm.com\"\n  \n  \n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{api_cesion_2020}}/api/user",
+                  "host": ["{{api_cesion_2020}}"],
+                  "path": ["api","user"]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": {\n        \"identificador\": \"15332262\",\n        \"email\": \"dolores@ctohm.com\",\n        \"access_token\": \"qk1Z7qrJuaHjyhVItabmOxaSIbpftIqVuPH51fxnTgZzA50kMfymh4vaCrPm\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "iniciar sesion",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "72108ac6-f31c-4a8d-b6d7-e62989ef6672",
+                "exec": [
+                  "pm.test(\"Your test name\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "     pm.expect(jsonData.access_token).to.be.a('string');",
+                  "    pm.environment.set('access_token',jsonData.access_token);",
+                  "    ",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "f16d18c3-9bec-4c91-952e-9eb5e44ab246",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \n  \"password\": \"felipe\",\n  \"email\": \"ffigueroa@ctohm.com\"\n  \n  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/auth/login",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","auth","login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get my own user data",
+          "_postman_id": "d3eacc84-02d4-47cc-9790-f6b9498f9b22",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/user",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","user"],
+              "query": [
+                {
+                  "key": "X-Access-Token",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get empresas sobre las que tengo permisos",
+          "_postman_id": "47babf50-7380-47b5-b1c9-7338441d7204",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/user/empresas",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","user","empresas"],
+              "query": [
+                {
+                  "key": "X-Access-Token",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get empresas sobre las que tengo permisos Copy",
+          "_postman_id": "148646a0-fc52-456f-8be5-80e9631c4c7d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/user/empresas",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","user","empresas"],
+              "query": [
+                {
+                  "key": "X-Access-Token",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cerrar sesión",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "72108ac6-f31c-4a8d-b6d7-e62989ef6672",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "dd840024-1015-4e27-ae6e-7b23f2d1c703",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \n  \"password\": \"felipe\",\n  \"email\": \"ffigueroa@ctohm.com\"\n  \n  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/auth/loogut",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","auth","loogut"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "cc49f744-de04-4a15-ac50-b82c1093c6c9"
+    },
+    {
+      "name": "certificado",
+      "item": [
+        {
+          "name": "cargar certificado",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "987fb9f9-c161-4482-a668-33352ac17476",
+                "exec": [
+                  "pm.test(\"id is a string\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.data.id).to.be.a('string');",
+                  "    pm.environment.set('certificado_id',jsonData.data.id);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "24c790f0-e0db-4ec4-b91b-52023009fe74",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \n  \"docEncode\": \"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\",\n  \"fileName\": \"cert_ctohm\",\n  \"password\": \"{{password_pfx}}\"\n  \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/certificado",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","certificado"]
+            }
+          },
+          "response": [
+            {
+              "id": "7349651f-42e7-4499-957e-daf7a9a2236e",
+              "name": "certificado cargado",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{access_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"certId\": \"1\",\n  \"docEncode\": \"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\",\n  \"fileName\": \"cert_ctohm\",\n  \"password\": \"{{password_pfx}}\",\n  \"rutCedente\": \"76986660-4\",\n  \"token\": \"{{token}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{api_cesion_2020}}/api/certificado",
+                  "host": ["{{api_cesion_2020}}"],
+                  "path": ["api","certificado"]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"id\": \"62dd1fcf-ef0b-4cba-9961-64cbd94a20ab\",\n    \"email\": \"ffigueroa@ctohm.com\",\n    \"archivo_nombre\": \"cert_ctohm\",\n    \"created_at\": \"2020-02-09T20:37:47.000000Z\",\n    \"firmaElectronica\": {\n        \"subject\": {\n            \"C\": \"CL\",\n            \"title\": \"PERSONA NATURAL\",\n            \"CN\": \"FELIPE ESTEBAN FIGUEROA FAGANDINI\",\n            \"emailAddress\": \"ffigueroa@ctohm.com\",\n            \"serialNumber\": \"13233197-9\"\n        },\n        \"valid_from\": \"2019-02-21 13:38:40\",\n        \"valid_to\": \"2022-02-21 13:38:40\",\n        \"issuer\": {\n            \"C\": \"CL\",\n            \"O\": \"Acepta.com S.A.\",\n            \"CN\": \"Acepta.com Autoridad Certificadora Clase 2 Persona Natural - G4\",\n            \"emailAddress\": \"info@acepta.com\",\n            \"serialNumber\": \"96919050-8\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "actualizar certificado",
+          "_postman_id": "cba4c1cc-7f7a-4367-8320-e0ceadbe5cca",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\n  \"rutCedente\": \"76986660-4\"\n\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/certificado/{{certificado_id}}",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","certificado","{{certificado_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ver datos de un certificado en particular",
+          "_postman_id": "9ff1b9c9-b724-4a1d-ab26-7b81955054fd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/certificado/{{certificado_id}}",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","certificado","{{certificado_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener token SII con un certificado",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "39c57dde-7f06-4c7d-966a-fb7715f3cf4c",
+                "exec": [
+                  "pm.test(\"Your test name\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "     pm.expect(jsonData.data).to.be.a('object');",
+                  "     pm.expect(jsonData.data.token).to.be.a('string');",
+                  "     pm.expect(jsonData.success).to.eq(true);",
+                  "    pm.environment.set('sii_token',jsonData.data.token);",
+                  "    ",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "b7d62315-d365-43b7-87b3-585b12f12592",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\"certificado_id\":\"{{certificado_id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/certificado/token",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","certificado","token"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ver empresas autorizadas para un certificado",
+          "_postman_id": "ec14f6ad-43f2-4fa7-a46a-04b2c9fb67c6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/certificado/{{certificado_id}}/empresas",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","certificado","{{certificado_id}}","empresas"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar mis certificados",
+          "_postman_id": "24439815-8861-4b0e-b574-fc124cfe7e31",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/certificado",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","certificado"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "8a161a8a-3580-4c38-a8f5-8b4a00440ac2"
+    },
+    {
+      "name": "dte",
+      "item": [
+        {
+          "name": "descargar documentos c un certificado",
+          "_postman_id": "c6070914-c518-486d-b1b2-58f342ba4a19",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\"fecha_desde\"\t:\"2020-01-06\",\n\"fecha_hasta\"\t:\"2020-02-10\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/dte/download/{{certificado_id}}/{{rut_cedente}}",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","dte","download","{{certificado_id}}","{{rut_cedente}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar documentos desde el SII",
+          "_postman_id": "64b54a7e-8a01-4467-966d-477eff1fb956",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/dte/refresh/{{certificado_id}}/{{rut_cedente}}",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","dte","refresh","{{certificado_id}}","{{rut_cedente}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar banderas de un periodo y tipo documento",
+          "_postman_id": "5161e4b2-4fc2-4c51-abbb-9558f9d1394b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"periodo\": \"2020-02\",\n    \"tipo_doc\": 34\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/dte/{{certificado_id}}/{{rut_cedente}}",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","dte","{{certificado_id}}","{{rut_cedente}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar documentos presentes en la BBDD",
+          "_postman_id": "a94bee6a-d60a-40d5-94b8-fd0c2c6f8bcd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/dte/{{certificado_id}}/{{rut_cedente}}?cedible=1&desde=&hasta=",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","dte","{{certificado_id}}","{{rut_cedente}}"],
+              "query": [
+                {
+                  "key": "cedible",
+                  "value": "1",
+                  "description": "(cedible=1 o cedible=0 para filtrar efectivamente)"
+                },
+                {
+                  "key": "desde",
+                  "value": "",
+                  "description": "YYYY-MM-DD"
+                },
+                {
+                  "key": "hasta",
+                  "value": "",
+                  "description": "YYYY-MM-DD"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "listar info de un DTE presentes en la BBDD",
+          "_postman_id": "364cf5b7-87c7-41e4-ac63-077e07430b53",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/dte/76986660-4_34_72",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","dte","76986660-4_34_72"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "628113cc-a8d7-41ff-912e-ffa2c39653f3"
+    },
+    {
+      "name": "Misc",
+      "item": [
+        {
+          "name": "health",
+          "_postman_id": "5af965ef-4faf-4a34-ad1d-2648e1d0c1a5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Con",
+                "value": "",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/health",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","health"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "40042006-aa86-426d-a789-35d7ec66a8b7"
+    },
+    {
+      "name": "Cesion",
+      "item": [
+        {
+          "name": "ceder documento",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "387a9ffd-803c-4a91-95ed-8855adf660e7",
+                "exec": [
+                  "pm.test(\"id is a string\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.track_id).to.be.a('number');",
+                  "    pm.environment.set('track_id',jsonData.track_id);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "a695d64b-8f20-4397-9240-70246699b993",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \n    \"certificado_id\": \"{{certificado_id}}\",\n    \"rut_empresa\": \"76986660-4\",\n    \"tipo_documento\": 34,\n    \"folio\": \"72\",\n    \"cesionario\":{\n    \t\"rut\":\"77074364-8\",\n    \t\"razon_social\":\"Riff SpA\",\n    \t\"direccion\":\"Martín Alonso Pinzón 7580\",\n    \t\"email\":\"ffiguerf@uc.cl\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/cesion",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","cesion"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ceder documento Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "387a9ffd-803c-4a91-95ed-8855adf660e7",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "4af926b8-714e-4e0a-b63a-8f7819b56381",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \n    \"certificado_id\": \"{{certificado_id}}\",\n    \"rut_empresa\": \"76986660-4\",\n    \"tipo_documento\": 34,\n    \"folio\": \"72\",\n    \"cesionario\":{\n    \t\"rut\":\"77074364-8\",\n    \t\"razon_social\":\"Riff SpA\",\n    \t\"direccion\":\"Martín Alonso Pinzón 7580\",\n    \t\"email\":\"ffiguerf@uc.cl\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/aec/{{track_id}}",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","aec","{{track_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "receder documento",
+          "_postman_id": "13f061bc-50ee-4080-826e-7868cca3a0fb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \n    \"certificado_id\": \"{{certificado_id}}\",\n    \"rut_empresa\": \"76986660-4\",\n    \"tipo_documento\": 34,\n    \"folio\": \"72\",\n    \"cesionario\":{\n    \t\"rut\":\"77074364-8\",\n    \t\"razon_social\":\"Riff SpA\",\n    \t\"direccion\":\"Martín Alonso Pinzón 7580\",\n    \t\"email\":\"ffiguerf@uc.cl\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{api_cesion_2020}}/api/cesion",
+              "host": ["{{api_cesion_2020}}"],
+              "path": ["api","cesion"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "b66222d3-8b17-4826-bf9e-df2c6f3365f7"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{access_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "ece48a21-6d6f-49b6-9271-6b3a796d42f8",
+        "type": "text/javascript",
+        "exec": [
+          "var sii_token = pm.environment.get('sii_token');",
+          "if (sii_token) {",
+          "    pm.request.headers.upsert({",
+          "        key: 'X-Sii-Token',",
+          "        value: sii_token",
+          "    });",
+          "}"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "74a5c94b-8bf7-441b-8e2f-92872643bc64",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "dfedf8be-5cb1-428b-8a9d-90cd8b459b36",
+      "key": "api_cesion_2020",
+      "value": "http://cesion.local.fff",
+      "type": "string"
+    },
+    {
+      "id": "dbf304e4-715e-4422-bb94-0c36aa7120d7",
+      "key": "api_cesion_2020_prod",
+      "value": "https://cesion.ctohm.com",
+      "type": "string"
+    }
+  ]
+}

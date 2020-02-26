@@ -1,0 +1,3909 @@
+{
+  "info": {
+    "_postman_id": "82c24ae3-62d8-4487-b46d-3c8fd0f0d23c",
+    "name": "API MyDot YAML",
+    "description": "Esta es la definición el API MyDot, la capa visible del backend del Servicio MyDot",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Boton",
+      "item": [
+        {
+          "name": "Muestra el Cliente asociado a un Botón.",
+          "_postman_id": "ade16766-47f2-47db-b11a-950897c55f85",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/cliente?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","cliente"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "aa5354a7-147b-465b-8db8-3b92c1a92827",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Cliente asociado a un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra la Dirección asociada a un Botón.",
+          "_postman_id": "2300fb0c-27fa-4fb7-b8ad-65db40b5dfd1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/direccion?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","direccion"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "3f99042e-d529-4784-a36e-bc8b888c93b4",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra la Dirección asociada a un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra el Medio de Pago asociado a un Botón.",
+          "_postman_id": "b30eac82-babb-413c-ba66-167ec16ced83",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/mediopago?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","mediopago"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "ef1aaaa6-0aa9-45a2-b6a0-f1fe9c10bbcf",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Medio de Pago asociado a un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Añadir Productos de un Botón.",
+          "_postman_id": "b41933d4-1ca3-46d9-ad2e-9ac562cf257d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/productos/rel/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","productos","rel",":fk"],
+              "variable": [
+                {
+                  "id": "3e252b65-5c65-4248-b9a7-d1f68c45eeb5",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "6cb9a4f0-4696-4284-8c76-8e8b1d85af99",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Añadir Productos de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Elimina Productos de un Botón.",
+          "_postman_id": "c9d77a87-8909-4d43-9b34-df41617e45cb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/productos/rel/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","productos","rel",":fk"],
+              "variable": [
+                {
+                  "id": "99acb22d-dc72-441c-9c21-a7877d7dfe94",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "afbed447-6414-4ebe-bdac-c6329990562e",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Elimina Productos de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra la Marca de un Botón.",
+          "_postman_id": "97b3d82a-26b7-4caf-addd-e9987c592769",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/marca?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","marca"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "3e1f3239-6531-47fc-b5e7-5ea14e3ccf81",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra la Marca de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Añadir Ventanas Horarias de un Botón.",
+          "_postman_id": "91f80200-ba25-4428-81de-3696ee774079",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/ventanas_horario/rel/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","ventanas_horario","rel",":fk"],
+              "variable": [
+                {
+                  "id": "bdc3e10e-957b-4ea2-8807-61d151a5b58b",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "11c9c887-1deb-4011-b8a8-4fa62108a6bb",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Añadir Ventanas Horarias de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Elimina Ventanas Horarias de un Botón.",
+          "_postman_id": "dbb094c9-ffb7-42be-a4aa-9d1b9861faa1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/ventanas_horario/rel/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","ventanas_horario","rel",":fk"],
+              "variable": [
+                {
+                  "id": "f97ed978-1ded-4df7-94a2-11fe6c7f553d",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "82c42d0d-be0d-432e-9dce-cae57e319b6a",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Elimina Ventanas Horarias de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista pedidos de un Botón.",
+          "_postman_id": "3845dc04-0ba4-4f01-b8cc-a528cdc256de",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/pedidos?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","pedidos"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "472368a9-0f72-4173-8c3c-4bdbcbc5f208",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista pedidos de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Agrega una entidad pedidos a un Botón.",
+          "_postman_id": "a1834ee0-7f60-4792-bdb5-3f14a5b39c7b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/pedidos",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","pedidos"],
+              "variable": [
+                {
+                  "id": "00aa989a-0e00-4504-a0c1-d46c8bcd7b12",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Agrega una entidad pedidos a un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Productos de un Botón.",
+          "_postman_id": "2dcdade0-b079-4ad5-9683-c33a7eb17675",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/productos?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","productos"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "5b8e737e-4e60-4db2-b1e4-0cccd1dca113",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Productos de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Ventanas Horarias de un Botón.",
+          "_postman_id": "f0e5353d-4271-4881-b28c-4081df57374f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/ventanas_horario?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","ventanas_horario"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "7e53b7ff-b6fd-40af-a54c-2a2021094804",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Ventanas Horarias de un Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Verifica si un Botón existe en la BBDD.",
+          "_postman_id": "e801d400-44de-408f-8c16-f69f09535b89",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/exists",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","exists"],
+              "variable": [
+                {
+                  "id": "c0ec77be-740c-4699-8ba7-318d8e816fe9",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Verifica si un Botón existe en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra un Botón por {{id}} en la BBDD.",
+          "_postman_id": "f9130167-811f-4f76-be0e-09a67798f32d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "003d19ed-cab0-409c-ad94-4141f91e9029",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra un Botón por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Modifica o crea un Botón y persiste en BBDD.",
+          "_postman_id": "11918310-0db6-46e3-bcdc-f52a97528256",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "An object of model property name/value pairs"
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id"],
+              "variable": [
+                {
+                  "id": "5acb4bbc-2c1f-4fc2-bb72-7f283e304576",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Modifica o crea un Botón y persiste en BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Verifica si un Botón existe en la BBDD.",
+          "_postman_id": "0f60f9e9-4eb3-4f77-9010-8e99a9a13d64",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "HEAD",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id"],
+              "variable": [
+                {
+                  "id": "6ee01e87-203a-4082-b747-e4b0b944d606",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Verifica si un Botón existe en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Botones (propios) (filtro opcional).",
+          "_postman_id": "af9acbef-3e54-48cf-a12c-c7e5018f97f1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Botones (propios) (filtro opcional)."
+          },
+          "response": []
+        },
+        {
+          "name": "Devuelve los productos que se pueden asociar a un botón dado",
+          "_postman_id": "e71ec2cc-3959-4604-9ac9-69b3350ddba5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/:id/relatedProducts",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton",":id","relatedProducts"],
+              "variable": [
+                {
+                  "id": "8686c8d1-df17-4aa5-b34e-c2cdb04e6c13",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Devuelve los productos que se pueden asociar a un botón dado"
+          },
+          "response": []
+        },
+        {
+          "name": "Inscribe un botón a nombre del usuario",
+          "_postman_id": "a5df9131-df36-427f-b912-cb2b93b962c2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Boton/claim",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Boton","claim"]
+            },
+            "description": "Inscribe un botón a nombre del usuario"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "8916ec05-55d7-48e1-a608-925fc75d9503",
+      "description": "Folder for Boton"
+    },
+    {
+      "name": "Cliente",
+      "item": [
+        {
+          "name": "Buscar botones de un Cliente.",
+          "_postman_id": "c2f0ff75-9afa-47ce-b45a-3b87a6b93940",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/botones/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","botones",":fk"],
+              "variable": [
+                {
+                  "id": "a0678bed-f33c-48c9-87c6-d04f4f330bbd",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "cea27c6d-1010-4a4d-84d5-e2d65dfa69f0",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Buscar botones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar botones de un Cliente.",
+          "_postman_id": "a2da8958-dbce-48ef-a4ee-4785f5406429",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/botones/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","botones",":fk"],
+              "variable": [
+                {
+                  "id": "a579b55f-3de1-47cd-871a-71bb6e40cdd6",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "884e3d39-9a54-416b-b07c-f79eb53e0af2",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Actualizar botones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar direcciones de un Cliente.",
+          "_postman_id": "2b264884-1b32-4e52-9ad1-a54851cd0b70",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/direcciones/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","direcciones",":fk"],
+              "variable": [
+                {
+                  "id": "062a1742-1fba-46ad-aad1-e6960ad06fa6",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "f314584f-cff0-4406-a97f-2c561ab99559",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Buscar direcciones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar direcciones de un Cliente.",
+          "_postman_id": "e3112482-c749-48f7-987d-9af66561d389",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/direcciones/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","direcciones",":fk"],
+              "variable": [
+                {
+                  "id": "921d746e-9a64-44a1-894f-d1274572b76b",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "52a8bc6f-e0fa-4e46-9edc-43a8d3ac2e3e",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Actualizar direcciones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Suprimir direcciones de un Cliente.",
+          "_postman_id": "0cd79291-5142-4a48-8209-7bb4d046780e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/direcciones/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","direcciones",":fk"],
+              "variable": [
+                {
+                  "id": "15f1303a-c84d-435e-a07d-09cfd8995486",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "4597d3c4-7257-491a-828a-64842bd4fcc5",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Suprimir direcciones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra la Dirección por Defecto de un Cliente.",
+          "_postman_id": "4a23eacc-2073-45e3-b0dc-307e17059303",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/direccion_default?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","direccion_default"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "854ee634-793a-4cb7-a25e-bbfa6a8ee3b9",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra la Dirección por Defecto de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Medios de Pago de un Cliente.",
+          "_postman_id": "583c4b32-bbb4-42bd-b3a5-6dbaa1a5c01e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago",":fk"],
+              "variable": [
+                {
+                  "id": "cd69f5d0-b89f-4db6-aa06-e8ed8ce003a7",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "aada5542-c064-4b40-a425-b6758a1dc57a",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Buscar Medios de Pago de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar Medios de Pago de un Cliente.",
+          "_postman_id": "70576cf7-1a3b-4d66-b054-92c87352697e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago",":fk"],
+              "variable": [
+                {
+                  "id": "b5bc4aa6-2a4d-4413-8492-020c2be70259",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "336f149b-ef01-4b15-9e7a-605460361b74",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Actualizar Medios de Pago de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Suprimir Medios de Pago de un Cliente.",
+          "_postman_id": "19c265b1-49a1-4664-82f7-cd274da7aca0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago",":fk"],
+              "variable": [
+                {
+                  "id": "51a7a1c5-6bc3-4ed4-a6a5-0b20769c2bd2",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "56af3236-328b-44f6-8329-970bbfb97b16",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Suprimir Medios de Pago de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra el Medio de Pago por defecto de un Cliente.",
+          "_postman_id": "b298434f-4fc0-49aa-b4f8-387c54728478",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediopago_default?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediopago_default"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "924bf71a-8e5c-40eb-8983-a07e792972e8",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Medio de Pago por defecto de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar pedidos de un Cliente.",
+          "_postman_id": "75631e62-0c0e-4e18-93ef-5bd0aa7df75f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/pedidos/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","pedidos",":fk"],
+              "variable": [
+                {
+                  "id": "6d240e9e-ac53-4a64-8813-3168313954b6",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "bc822500-59d4-4c1a-aada-4b5d5cd88b76",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Buscar pedidos de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar pedidos de un Cliente.",
+          "_postman_id": "b2e347fc-6468-44f3-a31e-f1f015f34a3e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/pedidos/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","pedidos",":fk"],
+              "variable": [
+                {
+                  "id": "15493c57-3bfc-431d-90bc-7581331aff51",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "7f12be1a-7dd2-4417-84b2-1a91b0ada3df",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Actualizar pedidos de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar mediospago_webpay de un Cliente.",
+          "_postman_id": "7a1519d2-0713-4697-99c4-14157b2da304",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago_webpay/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago_webpay",":fk"],
+              "variable": [
+                {
+                  "id": "e15b976a-5fe8-4a2f-a8be-8505a30bed40",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "5de0c7af-e3a1-4951-9b00-5c2d36410c89",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Buscar mediospago_webpay de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Suprimir mediospago_webpay de un Cliente.",
+          "_postman_id": "532d8cdf-f4dc-49a6-a76e-e6a1bf65b3d5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago_webpay/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago_webpay",":fk"],
+              "variable": [
+                {
+                  "id": "d9c6e619-3eec-4303-ad8c-19d012558fb5",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "a19f5b71-ece8-488d-8d5c-e51eb4bf7f75",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Suprimir mediospago_webpay de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar transacciones_webpay de un Cliente.",
+          "_postman_id": "606e3d87-197f-482e-a069-5043a5adc50c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/transacciones_webpay/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","transacciones_webpay",":fk"],
+              "variable": [
+                {
+                  "id": "a9d6a990-034f-4912-8dc5-f68f51c5151e",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "0201ce78-93ef-4af5-a95a-8302d5487ec1",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Actualizar transacciones_webpay de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista botones de un Cliente.",
+          "_postman_id": "519d06da-17ff-4ec8-8447-6329547adcd7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/botones?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","botones"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "a8b568d5-d847-48f5-881c-c3779870ce0d",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista botones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista direcciones de un Cliente.",
+          "_postman_id": "470c0298-fd83-4bf0-a6f3-91329d2f800a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/direcciones?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","direcciones"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "a2e82aa6-f613-4688-a43c-ea1f9e86ce75",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista direcciones de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Agrega una entidad direcciones a un Cliente.",
+          "_postman_id": "ff5c8caf-ca77-4fd2-9b1e-713cba6d3538",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/direcciones",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","direcciones"],
+              "variable": [
+                {
+                  "id": "6e64fc4c-4a94-4022-87e3-c52d6c0b10ee",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Agrega una entidad direcciones a un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Medios de Pago de un Cliente.",
+          "_postman_id": "32f99d31-67e3-4cc0-9a0f-b31123266965",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "c991dc81-530d-4767-965a-9c28c177af3b",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Medios de Pago de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Agrega una entidad mediospago a un Cliente.",
+          "_postman_id": "1979e47c-5271-4f45-8d8e-92e9aa8ae5c2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago"],
+              "variable": [
+                {
+                  "id": "baa28e79-1261-45be-8a61-088879c5ccb2",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Agrega una entidad mediospago a un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista pedidos de un Cliente.",
+          "_postman_id": "128a1c9b-e65e-415b-be29-b05d48e09b48",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/pedidos?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","pedidos"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "9ef34bda-eb18-49a8-8f8d-8a920b6e17aa",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista pedidos de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Agrega una entidad pedidos a un Cliente.",
+          "_postman_id": "7bbcdb27-1867-4ec4-87a7-37cc874db3b0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/pedidos",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","pedidos"],
+              "variable": [
+                {
+                  "id": "b17372b7-bd50-4178-bf05-153c55b930df",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Agrega una entidad pedidos a un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista mediospago_webpay de un Cliente.",
+          "_postman_id": "1bd032b5-97e9-4f85-8c51-501f61debaea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago_webpay?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago_webpay"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "bece8d90-a9a8-427d-bb1d-e56b68a804a8",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista mediospago_webpay de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Agrega una entidad mediospago_webpay a un Cliente.",
+          "_postman_id": "eea6d1af-9eca-418e-a056-ebe6dcf4401a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/mediospago_webpay",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","mediospago_webpay"],
+              "variable": [
+                {
+                  "id": "cf5a1b8d-ed0c-42a5-8743-ad4dfe5c60b0",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Agrega una entidad mediospago_webpay a un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista transacciones_webpay de un Cliente.",
+          "_postman_id": "eb24b6cb-f93f-4284-8eac-ee36687650b0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/transacciones_webpay?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","transacciones_webpay"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "5e3bf14d-5131-4cb4-b8ce-d5e249f6a5b4",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista transacciones_webpay de un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Agrega una entidad transacciones_webpay a un Cliente.",
+          "_postman_id": "8f1fad1f-afc6-4773-a849-9726331aab22",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/transacciones_webpay",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","transacciones_webpay"],
+              "variable": [
+                {
+                  "id": "992fca64-fbde-4891-a71d-a475e59f2f42",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Agrega una entidad transacciones_webpay a un Cliente."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Clientes (filtro opcional).",
+          "_postman_id": "543105a3-d204-4c30-a53d-2ff7c78cff60",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Clientes (filtro opcional)."
+          },
+          "response": []
+        },
+        {
+          "name": "Crea un Cliente y persiste en BBDD.",
+          "_postman_id": "5474cd33-77bd-4a04-941d-c6eb93c50d39",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "Model instance data"
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente"]
+            },
+            "description": "Crea un Cliente y persiste en BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra un Cliente por {{id}} en la BBDD.",
+          "_postman_id": "6cf8413a-d9d1-46a9-aa4e-6a1117bf9d69",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "dcacf524-7a38-4ec0-93a6-f72330ecb54a",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra un Cliente por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Modifica o crea un Cliente y persiste en BBDD.",
+          "_postman_id": "63cc4a79-cb8e-4571-8cb6-e5e18754d3f8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "An object of model property name/value pairs"
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id"],
+              "variable": [
+                {
+                  "id": "291a0127-28b0-478f-b52b-f634b047f95c",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Modifica o crea un Cliente y persiste en BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Cliente Inicia sesión usando email y password.",
+          "_postman_id": "89ebead8-b05c-4ac2-9712-94f3230212c4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/login?include={{include}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","login"],
+              "query": [
+                {
+                  "key": "include",
+                  "value": "{{include}}"
+                }
+              ]
+            },
+            "description": "Cliente Inicia sesión usando email y password."
+          },
+          "response": []
+        },
+        {
+          "name": "Cliente Cierra sesión. Requiere AccessToken.",
+          "_postman_id": "6ccd950e-3809-44b2-8c69-34b3f8c145f6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/logout",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","logout"]
+            },
+            "description": "Cliente Cierra sesión. Requiere AccessToken."
+          },
+          "response": []
+        },
+        {
+          "name": "Gatilla la verificación de la cuenta de usuario",
+          "_postman_id": "91635394-cbed-4d2e-be3c-c72e91fd723e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/:id/verify",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente",":id","verify"],
+              "variable": [
+                {
+                  "id": "637bd88d-4d1a-482e-98c6-ad7c078dc364",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Gatilla la verificación de la cuenta de usuario"
+          },
+          "response": []
+        },
+        {
+          "name": "Cliente Confirma registro siguiendo un link.",
+          "_postman_id": "5d2b5d01-d814-4990-b50b-03d7416bd004",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/confirm?uid={{uid}}&token={{token}}&redirect={{redirect}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","confirm"],
+              "query": [
+                {
+                  "key": "uid",
+                  "value": "{{uid}}"
+                },
+                {
+                  "key": "token",
+                  "value": "{{token}}"
+                },
+                {
+                  "key": "redirect",
+                  "value": "{{redirect}}"
+                }
+              ]
+            },
+            "description": "Cliente Confirma registro siguiendo un link."
+          },
+          "response": []
+        },
+        {
+          "name": "Reset password for a user with email.",
+          "_postman_id": "83c1f51c-1460-4822-a6c1-1084c88faea4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/reset",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","reset"]
+            },
+            "description": "Reset password for a user with email."
+          },
+          "response": []
+        },
+        {
+          "name": "Cambia el password de un usuario.",
+          "_postman_id": "19f82f67-e79a-4fe8-a525-1d9073a0d040",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "oldPassword",
+                  "value": "{{oldPassword}}",
+                  "type": "text"
+                },
+                {
+                  "key": "newPassword",
+                  "value": "{{newPassword}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/change-password",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","change-password"]
+            },
+            "description": "Cambia el password de un usuario."
+          },
+          "response": []
+        },
+        {
+          "name": "Cliente Restablece password de un usuario mediante correoy link único.",
+          "_postman_id": "2d0eb62e-673d-43b2-bfb3-8387d3247c62",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "newPassword",
+                  "value": "{{newPassword}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/reset-password",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","reset-password"]
+            },
+            "description": "Cliente Restablece password de un usuario mediante correoy link único."
+          },
+          "response": []
+        },
+        {
+          "name": "Verifica si un botón ya ha sido inscrito por este u otro cliente",
+          "_postman_id": "13064763-fc29-475b-8f18-39b7b8d5f15a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/isButtonClaimed/:idBoton",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","isButtonClaimed",":idBoton"],
+              "variable": [
+                {
+                  "id": "b70d3939-c2b3-42df-ba66-66e0616f66fe",
+                  "key": "idBoton",
+                  "value": "{{idBoton}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Verifica si un botón ya ha sido inscrito por este u otro cliente"
+          },
+          "response": []
+        },
+        {
+          "name": "Inscribe o loguea a un usuario usando facebook",
+          "_postman_id": "1e7518f0-f4ed-4f4c-9765-d6496f25292c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/fbauth",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","fbauth"]
+            },
+            "description": "Inscribe o loguea a un usuario usando facebook"
+          },
+          "response": []
+        },
+        {
+          "name": "Lista ventanas horarias con el costo de despacho para una dirección específica",
+          "_postman_id": "2ef79423-113b-4213-9d78-286d462d6a08",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Cliente/ventanasDireccion/:idDireccion",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Cliente","ventanasDireccion",":idDireccion"],
+              "variable": [
+                {
+                  "id": "6a0ee428-3fbb-4106-9657-f3814c82299e",
+                  "key": "idDireccion",
+                  "value": "{{idDireccion}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista ventanas horarias con el costo de despacho para una dirección específica"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "1e2abead-82a7-4494-b560-8c5ad518d3e0",
+      "description": "Folder for Cliente"
+    },
+    {
+      "name": "Pedido",
+      "item": [
+        {
+          "name": "Muestra el Despacho de un Pedido.",
+          "_postman_id": "8469b959-4745-42c1-8793-2ce6a3dbadab",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/despacho?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","despacho"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "7545470a-66ee-4af0-84dc-bbe1f2069de8",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Despacho de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra la Dirección asociada a un Pedido.",
+          "_postman_id": "6df3e0ec-9b20-4399-83c6-3a8c7d01d052",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/direccion?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","direccion"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "49e5e45c-99ed-492a-abd3-0c01917979fb",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra la Dirección asociada a un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra el Medio de Pago asociado a un Pedido.",
+          "_postman_id": "8351ea9d-1b53-4ef1-8422-8c4c1851284c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/mediopago?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","mediopago"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "f8d7bb23-7b7c-452c-9773-aa7264456de2",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Medio de Pago asociado a un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra el Estado Actual de un Pedido.",
+          "_postman_id": "bcca378c-8efa-4331-8b82-1469d3075765",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/estado?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","estado"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "69d9ba61-0d06-481c-b731-2c9071002879",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Estado Actual de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Añadir Ventanas Horarias de un Pedido.",
+          "_postman_id": "2eba1e40-596c-4322-9253-fc2934a01e58",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/ventanas_horario/rel/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","ventanas_horario","rel",":fk"],
+              "variable": [
+                {
+                  "id": "4c88f14c-ad1d-4923-a118-5dc4dd05eb8f",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "99a6c3c3-bf16-413d-9e04-d207d98715e3",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Añadir Ventanas Horarias de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Elimina Ventanas Horarias de un Pedido.",
+          "_postman_id": "45d10e3b-6161-45fc-af30-f8c87dd827f9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/ventanas_horario/rel/:fk",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","ventanas_horario","rel",":fk"],
+              "variable": [
+                {
+                  "id": "b054d1e2-71c4-4253-be1c-061850d7b8ab",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                },
+                {
+                  "id": "492763cf-9804-47a6-bdb9-8b78adbd80b8",
+                  "key": "fk",
+                  "value": "{{fk}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Elimina Ventanas Horarias de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista historial de un Pedido.",
+          "_postman_id": "062f258c-8347-48a8-b061-49242b4facba",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/historial?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","historial"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "a0deba44-c5a5-4cb7-831f-9f4e0b0a181a",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista historial de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Productos de un Pedido.",
+          "_postman_id": "4b7f184d-3a94-4607-85d4-247252a443c1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/productos?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","productos"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "055b2afd-5a68-461d-b511-ee6b0581eeff",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Productos de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Ventanas Horarias de un Pedido.",
+          "_postman_id": "38f28fbc-34ef-4b38-b131-72e93a2623d1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id/ventanas_horario?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id","ventanas_horario"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "5c9d5d61-88ba-4068-a9d3-9ede71c98556",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Ventanas Horarias de un Pedido."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra un Pedido por {{id}} en la BBDD.",
+          "_postman_id": "80c702e4-d821-45a2-a0b8-9fb7c43e80ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "986b461b-94e8-438b-a11a-f09431387ce6",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra un Pedido por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Modifica o crea un Pedido y persiste en BBDD.",
+          "_postman_id": "c23b4770-d364-4644-9021-5e3ffc6a65c5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "An object of model property name/value pairs"
+            },
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido/:id",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido",":id"],
+              "variable": [
+                {
+                  "id": "0b2244e9-e951-4efb-8a90-df54547cf02e",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Modifica o crea un Pedido y persiste en BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Pedidos (propios) (filtro opcional).",
+          "_postman_id": "117937c7-fe86-4fbd-abd8-9af5e3f35cdc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Pedido?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Pedido"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Pedidos (propios) (filtro opcional)."
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "cd600979-7acc-46e5-b02c-8cbafe4823b5",
+      "description": "Folder for Pedido"
+    },
+    {
+      "name": "Producto",
+      "item": [
+        {
+          "name": "Muestra la Categoria de un Producto.",
+          "_postman_id": "94147e5a-85d2-423d-94c7-2c3cd078958a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/:id/categoria?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto",":id","categoria"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "650b142c-4f5a-44f7-85d5-17f871867254",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra la Categoria de un Producto."
+          },
+          "response": []
+        },
+        {
+          "name": "Muestra la Marca de un Producto.",
+          "_postman_id": "0417df1d-dfda-4406-b684-17b16ba7b422",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/:id/marca?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto",":id","marca"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "465e38bc-4d87-41e2-8e62-477b1d874dfa",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra la Marca de un Producto."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Productos de tipo Botón.",
+          "_postman_id": "182a88c2-17f9-42ee-b6f6-e5bd7f53a710",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/botones?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto","botones"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista Productos de tipo Botón."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista botones_disponibles de un Producto.",
+          "_postman_id": "43af7c42-2c70-4aba-a485-48d5a9d032e5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/:id/botones_disponibles?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto",":id","botones_disponibles"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "32648158-dd70-4414-8a1d-5389b02e0a85",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista botones_disponibles de un Producto."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Productos de tipo consumible.",
+          "_postman_id": "a69287f4-cb03-4499-8832-38fb92ea03ea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/consumibles?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto","consumibles"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista Productos de tipo consumible."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Comunas Restringidas de un Producto.",
+          "_postman_id": "e589f79a-7e28-4611-bb46-f8e2dda17c74",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/:id/comunas_restringidas?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto",":id","comunas_restringidas"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "f8c4c115-1a56-46a9-9bda-28ff346cd866",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Comunas Restringidas de un Producto."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra un Producto por {{id}} en la BBDD.",
+          "_postman_id": "e57d638a-dd1b-4a4f-a287-6b59cc25aa1e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "84a38e87-bd0d-4c41-9742-0b97ceed536e",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra un Producto por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Productos (filtro opcional).",
+          "_postman_id": "2f02a04e-305d-4074-a1d1-0f8c0acd92bc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Producto?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Producto"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Productos (filtro opcional)."
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "90e2e85a-cad6-4782-a75a-018e45587d2f",
+      "description": "Folder for Producto"
+    },
+    {
+      "name": "ProductoCategoria",
+      "item": [
+        {
+          "name": "Lista Productos de tipo Botón de una Categoría de Producto.",
+          "_postman_id": "3a8b0db4-bb4a-448d-88a3-b518a74c8610",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/ProductoCategoria/botones?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","ProductoCategoria","botones"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista Productos de tipo Botón de una Categoría de Producto."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Productos de tipo consumible de una Categoría de Producto.",
+          "_postman_id": "d09dd887-fed8-49ce-bd92-7d73d637a4c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/ProductoCategoria/consumibles?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","ProductoCategoria","consumibles"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista Productos de tipo consumible de una Categoría de Producto."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra una Categoría de Producto por {{id}} en la BBDD.",
+          "_postman_id": "ec18e4a5-3970-4242-a97c-b5003b83c03e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/ProductoCategoria/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","ProductoCategoria",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "d48369db-aa76-4f76-b64b-affe8e895e70",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra una Categoría de Producto por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Categorías de Producto (filtro opcional).",
+          "_postman_id": "cbd9b03c-08ec-458f-aee0-f7f9d9b592f9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/ProductoCategoria?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","ProductoCategoria"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Categorías de Producto (filtro opcional)."
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "ed3af5bc-3ad8-4450-bc64-836c62d64b55",
+      "description": "Folder for ProductoCategoria"
+    },
+    {
+      "name": "Fabricante",
+      "item": [
+        {
+          "name": "Lista Mascas de un Fabricante.",
+          "_postman_id": "dbaec1a0-1fa2-44f9-ab4d-9e11f12cedd9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Fabricante/:id/marcas?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Fabricante",":id","marcas"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "75dd3b93-b1c6-498b-95ba-1a97fc2712cd",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Mascas de un Fabricante."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra un Fabricante por {{id}} en la BBDD.",
+          "_postman_id": "4164b971-c8a9-45ee-bd4e-8b6b67e3bd80",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Fabricante/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Fabricante",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "1599d17b-5db7-426f-94e0-7cc5915e91c2",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra un Fabricante por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Fabricantes (filtro opcional).",
+          "_postman_id": "539b34ff-dfc9-48d1-8fe5-26e06b1017a6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Fabricante?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Fabricante"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Fabricantes (filtro opcional)."
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "8582e614-d528-449b-8d4d-310570c71293",
+      "description": "Folder for Fabricante"
+    },
+    {
+      "name": "Marca",
+      "item": [
+        {
+          "name": "Muestra el Fabricante de una Marca.",
+          "_postman_id": "790dd4fb-53c9-419a-95f4-d7f7d47f6efa",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Marca/:id/fabricante?refresh={{refresh}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Marca",":id","fabricante"],
+              "query": [
+                {
+                  "key": "refresh",
+                  "value": "{{refresh}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "d361474d-255d-436b-93b0-da2640994bc0",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Muestra el Fabricante de una Marca."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista botones_disponibles de una Marca.",
+          "_postman_id": "5557499e-cd76-47d0-8562-141dabb0cb5f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Marca/:id/botones_disponibles?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Marca",":id","botones_disponibles"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "e4e862e8-c27b-447e-99cb-33be5615b38a",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista botones_disponibles de una Marca."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista Productos de una Marca.",
+          "_postman_id": "432eec27-462e-44fa-ae56-01adcd5ab4e2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Marca/:id/productos?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Marca",":id","productos"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "52f9af8e-bbac-4396-bc89-84be466e696f",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista Productos de una Marca."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra una Marca por {{id}} en la BBDD.",
+          "_postman_id": "f3fe8e0d-30e6-4d00-9f4a-356c7d0aabbb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Marca/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Marca",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "7ed903d3-66e6-442d-8ace-a002c9be14a6",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra una Marca por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Marcas (filtro opcional).",
+          "_postman_id": "37eac890-6918-4c29-bde5-0ffc0f24acc7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/Marca?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","Marca"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Marcas (filtro opcional)."
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "22bb4821-c95c-4a04-9714-8a9682148f8c",
+      "description": "Folder for Marca"
+    },
+    {
+      "name": "VentanaHoraria",
+      "item": [
+        {
+          "name": "Lista botones (propios) dentro de una Ventana Horaria.",
+          "_postman_id": "8014865a-8e69-4a0e-ad02-4a3a02e21de1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/VentanaHoraria/:id/botones?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","VentanaHoraria",":id","botones"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "f543a004-e49d-4699-b28e-d1930e1f0064",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista botones (propios) dentro de una Ventana Horaria."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista pedidos (propios) dentro de una Ventana Horaria.",
+          "_postman_id": "650a0d84-65ea-455f-bbfb-69842ea5df36",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/VentanaHoraria/:id/pedidos?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","VentanaHoraria",":id","pedidos"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "481d74e9-eaef-4677-9651-671ef20c9b53",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Lista pedidos (propios) dentro de una Ventana Horaria."
+          },
+          "response": []
+        },
+        {
+          "name": "Encuentra una Ventana Horaria por {{id}} en la BBDD.",
+          "_postman_id": "9c9e123c-7bdd-4049-ab4e-0d7237ea1035",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/VentanaHoraria/:id?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","VentanaHoraria",":id"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ],
+              "variable": [
+                {
+                  "id": "6cef0aae-78df-460b-903a-64bc670932dc",
+                  "key": "id",
+                  "value": "{{id}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "description": "Encuentra una Ventana Horaria por {{id}} en la BBDD."
+          },
+          "response": []
+        },
+        {
+          "name": "Lista completa de Ventanas Horarias (filtro opcional).",
+          "_postman_id": "1f22283c-0b57-4356-911c-790dae31269b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://{{apidomain}}/api/VentanaHoraria?filter={{filter}}",
+              "protocol": "http",
+              "host": ["{{apidomain}}"],
+              "path": ["api","VentanaHoraria"],
+              "query": [
+                {
+                  "key": "filter",
+                  "value": "{{filter}}"
+                }
+              ]
+            },
+            "description": "Lista completa de Ventanas Horarias (filtro opcional)."
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "0560de98-e7d4-42a9-9fba-98070d0e26d9",
+      "description": "Folder for VentanaHoraria"
+    }
+  ]
+}
