@@ -1,0 +1,633 @@
+{
+  "Misc": [
+    "d5c5821c-9e9e-47d9-bfd3-c17ae9206724"
+  ],
+  "POST|api|Misc|image": [
+    "edf2d739-9985-48f2-a604-a8220130f178"
+  ],
+  "GET|api|Misc|banner": [
+    "38fe03f7-85c1-4a88-9c5b-2a079ae8988e",
+    "84988685-cb1e-4deb-ad05-b5ab2a358313"
+  ],
+  "GET|api|Misc|banners": [
+    "51dfe61c-0db6-4054-9f9a-41df2556120d",
+    "f0ecdad8-8d6e-4987-8d35-3626c8817762"
+  ],
+  "GET|api|Misc|cobertura": [
+    "be6f5e72-1123-4d58-8795-20571b00e5ff",
+    "7ea4f59f-b9be-43f2-bb34-c85377fecf41"
+  ],
+  "GET|api|Misc|coberturaGeoJson": [
+    "bf26a653-7ada-41f5-b93f-d75f7a113fad",
+    "afc6c90d-2657-4adc-874f-5d838079f17f"
+  ],
+  "GET|api|Misc|tos": [
+    "af4aff47-dd94-4da5-b689-393d09744b33",
+    "67da3986-6b61-4519-bef2-a4c61b73583f"
+  ],
+  "GET|api|Misc|privacy": [
+    "15906dbd-3cf9-4a9f-9a80-476db5b536bd",
+    "21705aaa-c955-450e-9cdd-f67ad0ce9037"
+  ],
+  "GET|api|Misc|coberturaFC": [
+    "31ed308f-de99-4dfa-a21d-c285b219388f",
+    "5a61d900-311d-4e97-873a-2a76d2ee6e45"
+  ],
+  "GET|api|Misc|privacidad": [
+    "4ff0b8c5-edb6-408b-b11e-7febe85375b4",
+    "97ba77e3-5334-4c53-8369-60f6cf566217"
+  ],
+  "GET|api|Misc|faq": [
+    "50002f0c-95bb-431d-ba0e-e1891d108c27",
+    "ac2f0b82-f4cb-477d-bfbd-33d5b2cb4a63"
+  ],
+  "GET|api|Misc|preguntas_frecuentes": [
+    "07db00f9-5288-41bc-8e76-51fe1a784320",
+    "80a2233d-5a86-44c5-b8ae-ce8c20fb9e3f"
+  ],
+  "POST|api|Misc|echo": [
+    "1c19bf2a-339d-49ea-8f7d-afc7cd7f5e26",
+    "715e473f-ab02-49e2-8c6a-9a02adc42e5a"
+  ],
+  "POST|api|Misc|cspReport": [
+    "b130b93a-797f-4100-9d9b-6d3f81982eab"
+  ],
+  "POST|api|Misc|throwError": [
+    "c18734a8-eff6-4e97-b43c-30333ad24caa",
+    "c44778c7-4cfd-4183-9955-7a6b5aa39149"
+  ],
+  "POST|api|Misc|hasCobertura": [
+    "7368f498-9637-4742-9966-86bf92db805a",
+    "a1e7ce6b-90fc-4fd9-bea8-d60d4fd88458"
+  ],
+  "GET|api|Misc|terminos_de_servicio": [
+    "879e20d4-0e26-4b20-aa5e-7938bfbeea90",
+    "73d8d91c-78eb-4b45-b3f7-48b58cc71bb4"
+  ],
+  "Boton": [
+    "5a59a418-ecdf-4680-98f9-087f10bb410b"
+  ],
+  "Boton|:id": [
+    "f15c0936-87f9-4de6-ab0a-a11808fd7090"
+  ],
+  "GET|api|Boton|:id|cliente": [
+    "3375fe62-a476-4777-afa2-a2da1c29c190"
+  ],
+  "GET|api|Boton|:id|direccion": [
+    "1ee30e56-fdf6-4273-97e2-e0f1c41002c1"
+  ],
+  "GET|api|Boton|:id|mediopago": [
+    "70727604-f416-4f63-86b6-e9f9e737063a"
+  ],
+  "Boton|:id|productos": [
+    "4dcb0e32-2764-47f9-b749-5fcb5c790aa4"
+  ],
+  "Boton|:id|productos|rel": [
+    "3437da68-4035-4fdc-a98c-d50a319608c8"
+  ],
+  "Boton|:id|productos|rel|:fk": [
+    "ee75eeef-89ff-4c11-9e38-389fc634d4dc"
+  ],
+  "PUT|api|Boton|:id|productos|rel|:fk": [
+    "1912376c-830e-4858-abd5-9b978f5268fa",
+    "f3b05afc-adf7-4a8b-8d55-ada21030a140"
+  ],
+  "DELETE|api|Boton|:id|productos|rel|:fk": [
+    "96ef9e49-d0a4-4ed6-9ae5-a4fdc8fa9659",
+    "0a56cd0b-6f8c-48b9-95cd-69c466e60938"
+  ],
+  "GET|api|Boton|:id|productos": [
+    "20d63b1c-6b8a-4389-a54c-ba9b5714f9f3",
+    "503c4441-4ebb-4c01-8e30-09d71e21983c"
+  ],
+  "GET|api|Boton|:id|marca": [
+    "b33b327c-7d3a-4f58-b05d-4275033be622"
+  ],
+  "GET|api|Boton|:id|ventana_default": [
+    "e58888bd-a991-46bb-88fc-27de76828985"
+  ],
+  "Boton|:id|ventanas_horario": [
+    "0c9e5911-83ea-4e1f-ba90-1ef383182d68"
+  ],
+  "Boton|:id|ventanas_horario|rel": [
+    "399b110f-e3c0-4e31-bcf7-33c4e5af7fff"
+  ],
+  "Boton|:id|ventanas_horario|rel|:fk": [
+    "eacc9fb5-fd3d-4cfe-88cc-31102580025a"
+  ],
+  "PUT|api|Boton|:id|ventanas_horario|rel|:fk": [
+    "8875c1c1-5715-4f3a-be5f-32aef8c47cec",
+    "005ef1e5-173c-4b0c-a1d8-0aa2ef65a80d"
+  ],
+  "DELETE|api|Boton|:id|ventanas_horario|rel|:fk": [
+    "2b86a06e-f1be-4a13-9259-a73e13828d1b",
+    "a13b372d-0578-433f-9526-1e8b488b9427"
+  ],
+  "GET|api|Boton|:id|ventanas_horario": [
+    "e9cd08fe-b17f-41bf-a013-740823ab178d",
+    "1f8987e8-9d75-4669-a3ff-e6b6059511a8"
+  ],
+  "Boton|:id|pedidos": [
+    "90b753cb-f186-40e1-a23b-6d8b1c6d3bfe"
+  ],
+  "GET|api|Boton|:id|pedidos": [
+    "c6a0f17e-bce0-4026-b9a9-7755d25736cd",
+    "2947f0ec-aba7-4e64-9230-43ecf0562e27"
+  ],
+  "POST|api|Boton|:id|pedidos": [
+    "7961a5b5-6002-43ba-afb7-215380b56431",
+    "73a73f33-fce2-4d5d-866b-9f0f3678a630"
+  ],
+  "GET|api|Boton|:id|relatedProducts": [
+    "542fe1f6-f7a2-407f-919e-8f2219f80f39",
+    "7e114763-c8d2-4cd9-aaac-cb46a6713a84"
+  ],
+  "GET|api|Boton|:id|resumen": [
+    "56517c8b-cb2d-45fd-814c-82ae9df4fab4",
+    "b8c3639c-858d-48e9-9757-84c4e2d70839"
+  ],
+  "GET|api|Boton|:id|producto_marca": [
+    "84c88c4b-ff6a-4487-894d-f086c5d9e034",
+    "2433a8b1-9000-4ceb-9775-cd1b5133a98f"
+  ],
+  "GET|api|Boton|:id": [
+    "c701e827-1f96-4c10-b97e-dead36c514dd",
+    "c735872d-5395-4794-aed1-91e3ab217953",
+    "6d96efea-46b5-40a2-a7a5-8978fc144e05"
+  ],
+  "PATCH|api|Boton|:id": [
+    "cf339ccf-ab57-4b3f-a6c5-9c26bb9aedcc"
+  ],
+  "POST|api|Boton|claim": [
+    "3bbba7c5-4e74-48c3-971b-db9c7c9b0eef",
+    "4a00bab3-9838-4461-b3c7-24bbf120aee3",
+    "1aeff9e1-9d54-4e6b-b9a8-99c8d821daf9"
+  ],
+  "GET|api|Boton": [
+    "1c19cc1b-3dc9-4e6c-9276-3a5fd74c904f",
+    "af319f64-22ab-4080-a61c-7afefba48f02",
+    "6904eb25-990e-48db-95ab-5d66b1c57a59"
+  ],
+  "Cliente": [
+    "609cb692-e5dd-4a04-b5d9-4ff8279078c3"
+  ],
+  "Cliente|:id": [
+    "083eb509-f144-4aa9-9f42-f328ad8244ad"
+  ],
+  "Cliente|:id|botones": [
+    "1b069e69-ccf8-4855-96b4-9c527ea6e939"
+  ],
+  "Cliente|:id|botones|:fk": [
+    "d88b52ba-9326-4ec9-a52b-97725ffa0c29"
+  ],
+  "GET|api|Cliente|:id|botones|:fk": [
+    "81758d22-2a98-471a-ad95-087cd0b2a7f9",
+    "3f26a232-b9a6-4efe-a680-706d208c089c"
+  ],
+  "PUT|api|Cliente|:id|botones|:fk": [
+    "1f1cfdc3-7afe-47f7-b808-7bdf3c0869bb",
+    "bc8cc50d-2670-4b92-82b8-bef1b9f2d574"
+  ],
+  "GET|api|Cliente|:id|botones": [
+    "7091b361-3468-42c6-92d4-5d1cf4dc532c",
+    "a1c88e05-2fbf-4fa1-bda7-2b256c208ff6"
+  ],
+  "Cliente|:id|notification_token": [
+    "a21a1ea4-584e-40f2-a674-b396e8912232"
+  ],
+  "Cliente|:id|notification_token|:fk": [
+    "3855bd88-dd0a-450d-9b9e-0ef70726e6ef"
+  ],
+  "GET|api|Cliente|:id|notification_token|:fk": [
+    "d9447202-7221-43c0-b00b-81edb47ae7bb",
+    "90a5870d-143e-4707-8a67-69c0fc45ce23"
+  ],
+  "DELETE|api|Cliente|:id|notification_token|:fk": [
+    "9a28c1f7-b5c8-4680-82d9-bb07606164bd",
+    "163316c4-022f-4802-ad17-3a9e262088c8"
+  ],
+  "POST|api|Cliente|:id|notification_token|sendToTopic": [
+    "4de40267-e98c-4874-a1dc-67672096163b",
+    "3d7d78ff-b0a3-431f-93a0-4405b6c86554"
+  ],
+  "POST|api|Cliente|:id|notification_token|sendToDeviceGroup": [
+    "08e94e0c-17f2-4b0e-8b51-840fab272fbf",
+    "fe6c2d94-9a84-459b-9e99-f29d42d6d8d7"
+  ],
+  "POST|api|Cliente|:id|notification_token|sendToDevice": [
+    "1d54c270-b8d3-43ab-a4b5-c0aedd69ce83",
+    "f1b6cdee-861a-4784-ad22-d1a1cc2d91ef",
+    "dd018347-bf44-4ba9-a367-5adaf547efe8"
+  ],
+  "GET|api|Cliente|:id|notification_token": [
+    "ab032ea6-0a9f-45ed-b9dc-69aa416891e8",
+    "68492307-9ca7-4b7a-a484-3502d8c2d612"
+  ],
+  "POST|api|Cliente|:id|notification_token": [
+    "7034042b-89c8-4254-aea4-0876ff85045b",
+    "63051b1c-2061-4045-8968-dad0be711ad7"
+  ],
+  "Cliente|:id|direcciones": [
+    "de18a820-4a91-4411-9f97-e745cfc9fde1"
+  ],
+  "Cliente|:id|direcciones|:fk": [
+    "b42f427a-f237-485f-843d-5301f60de148"
+  ],
+  "GET|api|Cliente|:id|direcciones|:fk": [
+    "d1378643-99dc-44c5-b1e7-42d7b2d8da82",
+    "8348ab2f-edc3-41d6-9696-fe9cb4acf830"
+  ],
+  "DELETE|api|Cliente|:id|direcciones|:fk": [
+    "ee62a0a2-f712-4958-a8ac-75abe361f2f7",
+    "7f3e329e-24be-450f-bbeb-b39552f2adaf",
+    "002927c1-efa6-4624-9a6f-8797de6107c8"
+  ],
+  "PUT|api|Cliente|:id|direcciones|:fk": [
+    "df44cdff-54c1-49d4-8401-b5bf4f3e1ccf",
+    "f2a87fb3-df8d-47ec-8bfd-2b2e5467b348"
+  ],
+  "GET|api|Cliente|:id|direcciones": [
+    "7345691d-4308-450a-9238-f2529bf9673d",
+    "f3d8c9b0-9bb5-4ee4-8ace-8d6c8353aa56",
+    "abbf0bcb-4210-4caa-945f-85e64eb47211"
+  ],
+  "POST|api|Cliente|:id|direcciones": [
+    "da1d69ec-ecc4-4a7e-a0ed-f89dff1206b8",
+    "1d1bc2ae-b02a-41f9-b3d8-905a772f7f7b"
+  ],
+  "GET|api|Cliente|:id|direccion_default": [
+    "73360f22-754b-40a0-a26d-9172e6697a18",
+    "53213891-52b7-450d-9bd7-9cb84579fd3b"
+  ],
+  "Cliente|:id|mediospago": [
+    "5fda86c4-8d67-4948-aa1c-7c065c8241c6"
+  ],
+  "Cliente|:id|mediospago|:fk": [
+    "6b38d270-a464-4a6d-a9cd-bb3cdf94a466"
+  ],
+  "GET|api|Cliente|:id|mediospago|:fk": [
+    "384c627b-d621-4d63-b69b-0e74c58c04a0",
+    "df9e5835-5342-47e6-adb2-1f260380fe5c"
+  ],
+  "DELETE|api|Cliente|:id|mediospago|:fk": [
+    "eb114764-7a40-4e7e-909b-0c0c040831c2",
+    "b4529c21-c633-4757-a8ee-ebfe82a6f8db",
+    "364d2eb7-91d8-48de-8683-f2772f6c2394"
+  ],
+  "GET|api|Cliente|:id|mediospago": [
+    "20aeab6e-46bf-49cd-8bb9-4fd2c8cd7452",
+    "1a0ad215-4dab-47fe-a205-504c2da12871"
+  ],
+  "POST|api|Cliente|:id|mediospago": [
+    "9e722b4f-fd2f-474d-9fa5-6a1bf6a0ceb7"
+  ],
+  "GET|api|Cliente|:id|mediopago_default": [
+    "33647ca0-0010-4ab4-8853-f6cdd3ef688c",
+    "7ba2467e-89a5-4d40-a7d0-db717022b195"
+  ],
+  "Cliente|:id|pedidos": [
+    "1eb8e30f-6137-4b7b-a119-814b8be2bc1c"
+  ],
+  "Cliente|:id|pedidos|:fk": [
+    "3391912b-dfbd-4718-b0e5-a4c969036a26"
+  ],
+  "GET|api|Cliente|:id|pedidos|:fk": [
+    "a2c29688-9e8c-42ff-9dde-6933c9c6c8c6",
+    "0686c317-250d-41e7-823b-f3d19f4fc1e6"
+  ],
+  "DELETE|api|Cliente|:id|pedidos|:fk": [
+    "1006ba95-3ae9-4e47-a2fa-907721f53618",
+    "b8950333-ef71-4de3-abb2-aa1fddb3ee43"
+  ],
+  "GET|api|Cliente|:id|pedidos": [
+    "8eaabae5-bdb9-46d1-923e-0f84fecbf813",
+    "43a57c5c-9e81-4cfa-b115-cb6174ec38ce"
+  ],
+  "POST|api|Cliente|:id|pedidos": [
+    "0ca7921c-8a80-4847-92da-c0d8788d950b",
+    "ab9002ad-ab60-4cc0-b06b-e01e712b557f"
+  ],
+  "Cliente|:id|transacciones_webpay": [
+    "484d7a63-ba16-4b59-8a06-8d90a52dbec9"
+  ],
+  "GET|api|Cliente|:id|transacciones_webpay|:fk": [
+    "750c0fa2-04df-432e-add2-4d777618b76f",
+    "4935834a-bdc0-4cd0-a91e-ad49e11bc204"
+  ],
+  "GET|api|Cliente|:id|transacciones_webpay": [
+    "56f64e05-cb13-4a9b-8b5a-01c553310e17",
+    "0b331bce-d77f-4c82-a03b-92b97d317c19"
+  ],
+  "POST|api|Cliente|:id|verify": [
+    "048ca55d-77c2-434e-95e2-c6e533caebdb",
+    "cdc3ee3b-901f-41d5-a3bd-f6bc5859d04c"
+  ],
+  "GET|api|Cliente|:id": [
+    "e06d97ac-9eaf-43f2-89c1-99b1252994a3",
+    "fc109233-9460-4d3b-940f-9ff8f79de60e"
+  ],
+  "PATCH|api|Cliente|:id": [
+    "45fd80cd-039f-416a-a87d-d1c15445c025",
+    "e17c7e47-bed6-438c-9455-b9ed368303f7"
+  ],
+  "POST|api|Cliente|login": [
+    "af239f1f-b971-449f-b3c7-1928398e7e40",
+    "0527ef8b-b0d6-402d-a029-b25e35ec33de",
+    "eb73f045-054f-4f2a-b65e-6590fca97428",
+    "ae709c83-cf2d-46b7-b8a4-6f46a4780b95",
+    "78803dca-ca2a-4ea1-96ac-88336f98659b",
+    "aa7d7fd9-5ac1-4273-a784-9bdde30849f4",
+    "04a2fd88-340a-4493-b5a3-f535058214de"
+  ],
+  "POST|api|Cliente|logout": [
+    "19174fca-c590-494e-8f1a-8bd7ef994942",
+    "0013d09b-7a9e-40fd-898f-8f4fcee136ea"
+  ],
+  "GET|api|Cliente|confirm": [
+    "bc3b99f5-9a7a-411a-a1c2-e62a9d6e616c",
+    "e4614eff-2932-47e8-8064-6595e1c729de"
+  ],
+  "POST|api|Cliente|reset": [
+    "78ad50b7-bbf2-4063-a8a9-5b1ce0da119f",
+    "389f0906-242f-4257-82c4-39539f051fae"
+  ],
+  "POST|api|Cliente|change-password": [
+    "a3323612-595d-4e94-a9c0-4334d4fe1495",
+    "c453fad2-110e-4284-a189-090f30d51124"
+  ],
+  "POST|api|Cliente|reset-password": [
+    "b451c835-2bcb-4f33-b99a-7fcefdd1e8c2",
+    "36e822d8-7718-4d03-8e88-74ff9d421fbe"
+  ],
+  "Cliente|isButtonClaimed": [
+    "aa51f638-c079-4790-8b4e-511ba89638fc"
+  ],
+  "GET|api|Cliente|isButtonClaimed|:idBoton": [
+    "772a1421-056c-4513-8975-15e3f34c77e1",
+    "7e7763a6-fa6b-4d7e-88f7-38234d35dcd4"
+  ],
+  "Cliente|ventanasDireccion": [
+    "9a4e3e27-a57b-404f-8a8f-8bbcc9855dab"
+  ],
+  "GET|api|Cliente|ventanasDireccion|:idDireccion": [
+    "93de3da6-63a0-4995-a564-9813c23d2fcd",
+    "0e772114-ab40-463d-9972-c219f8dd1a5a"
+  ],
+  "POST|api|Cliente|fbauth": [
+    "ce9a3cd3-e204-4953-80ad-5d85fe8b3d16",
+    "8bc36f89-d2e6-42f6-be0f-c269b07959d0"
+  ],
+  "POST|api|Cliente": [
+    "15e6b8dd-205c-47b8-bea0-794cb9bd0c23",
+    "8a9648f2-dbb8-407f-b60c-1a6cbf722465"
+  ],
+  "GET|api|Cliente": [
+    "5659ab20-eca7-463b-8800-42014d5773cf",
+    "04c6a736-1271-4e6b-8083-4d72426a0664"
+  ],
+  "Pedido": [
+    "5f0337e6-6252-43e6-8d89-8fa3888e97c0"
+  ],
+  "Pedido|:id": [
+    "c8326748-487a-4d27-b7cd-17d0ff7e169a"
+  ],
+  "GET|api|Pedido|:id|direccion": [
+    "e6aa0873-ed7e-4775-afda-2deacf9875b4",
+    "c0de4401-df6d-437f-8919-0db591c69550"
+  ],
+  "GET|api|Pedido|:id|mediopago": [
+    "84119e7e-0727-47e2-8584-6239cf8729e4",
+    "66c2659f-b5bc-4f0e-8e5c-cdaa37af0f7c"
+  ],
+  "GET|api|Pedido|:id|estado": [
+    "eb81d2cd-a7ec-4b45-b887-fe847971b2e8",
+    "cfe5b9fa-7a6c-4ff2-aff4-9f1320427fff"
+  ],
+  "GET|api|Pedido|:id|transaccion": [
+    "2a13f012-bcc4-42a8-9ba2-d4252eae93a0",
+    "87a6f083-2115-4c61-b490-8610946ded9a"
+  ],
+  "GET|api|Pedido|:id|historial": [
+    "b3708808-98ec-40b6-b8cb-f2e94b2a15c3"
+  ],
+  "GET|api|Pedido|:id|resumen": [
+    "e09be76a-6cce-4e3e-9b2b-795f59e1727f",
+    "ffc3f04f-c23f-4e56-9a68-73cec237ccbf"
+  ],
+  "GET|api|Pedido|:id": [
+    "312ddf89-245a-46a6-9ca0-46094c228cbd",
+    "4e99a0f8-a796-4f70-8227-b1d1c0a94ca7"
+  ],
+  "PATCH|api|Pedido|:id": [
+    "53744744-82a1-4de9-a61a-88d730fdc408",
+    "0f29263f-d809-42e6-a78e-35b2240ca0b6",
+    "078f8097-f136-4be5-aa3c-68ca4b71ec41",
+    "8557d1bb-f5ff-4e2e-8ccc-5fe36cb5e6c0"
+  ],
+  "Pedido|costo_despacho": [
+    "1cf0e1bd-0971-43a3-b645-0470e191d3fc"
+  ],
+  "GET|api|Pedido|costo_despacho|:monto": [
+    "cfe0a030-1b26-4470-96cb-2d02abdd44ac",
+    "8e41d0d8-21e4-40ac-b62d-8cfcef65ccab"
+  ],
+  "GET|api|Pedido": [
+    "2df8ee37-a4c1-4cc9-894f-36798e99e6a6",
+    "6294f2f5-cd79-4dda-b3ae-4677a0adbb68"
+  ],
+  "Producto": [
+    "c2f8f707-a520-4c87-8791-3de65d8e00d4"
+  ],
+  "Producto|:id": [
+    "6c1da30c-6e21-44d4-9db5-2f4a0aab9ca6"
+  ],
+  "GET|api|Producto|:id|categoria": [
+    "a0730839-a0bd-43db-87e9-4c339ecee503",
+    "b559cdd3-0398-4621-bb18-c78f4a5ec9b6"
+  ],
+  "GET|api|Producto|:id|marca": [
+    "55d37a86-feda-4d48-8581-c288b258807d",
+    "e88354ae-b661-42f1-9fca-34858827cea0"
+  ],
+  "GET|api|Producto|:id|comunas_restringidas": [
+    "615b9320-5928-4d74-9fee-563989aa683b"
+  ],
+  "POST|api|Producto|:id|image": [
+    "e698eff9-3821-473f-966a-fa43e0e8d3ca"
+  ],
+  "GET|api|Producto|:id": [
+    "9137f43d-494f-49cc-baa7-d3b7feaf5993",
+    "7845fa98-fbee-4450-924e-78833101c185"
+  ],
+  "GET|api|Producto|botones": [
+    "598e5c6d-aee1-4c7c-8b7b-88d35838531e",
+    "c6ef4e0f-1fad-4294-9afe-ccea70b32111"
+  ],
+  "GET|api|Producto|consumibles": [
+    "05fde096-a2d9-43b5-a4ea-02cf63702d4f",
+    "f7e1c171-c5af-46d0-9693-f0443c73d9f7"
+  ],
+  "GET|api|Producto": [
+    "15e75c37-a23c-4941-8897-77c64ca97273",
+    "08f7dd12-c827-42a2-aff7-0ae27e648d93"
+  ],
+  "ProductoCategoria": [
+    "73aff3ea-ece6-4508-9a50-1f8d159a6444"
+  ],
+  "GET|api|ProductoCategoria|botones": [
+    "f8e7eafb-81d3-4ff2-9ba1-4d93770c647d",
+    "373d9bf2-0ddd-47d6-962d-d9fdda125d47"
+  ],
+  "GET|api|ProductoCategoria|consumibles": [
+    "553a1a86-2a04-4939-94a4-d92722c1e777",
+    "7e898395-e32d-4b92-a271-dcf7221c3402"
+  ],
+  "GET|api|ProductoCategoria|:id": [
+    "c7fd0f72-ea1c-4d01-9ab8-c8fefeb613f7",
+    "600da12f-2377-4613-b005-24e3d8db5904"
+  ],
+  "GET|api|ProductoCategoria": [
+    "33860fed-46bc-44fa-b652-9443301e5054",
+    "4eaf04d0-589d-447f-a0b7-073c71dfbdb7"
+  ],
+  "Marca": [
+    "b779ca14-8867-48d4-a5ce-c5f4dc5900c6"
+  ],
+  "Marca|:id": [
+    "a14a44f6-a397-49d2-b653-d6694bbf1096"
+  ],
+  "GET|api|Marca|:id|botones": [
+    "09e3e276-dc59-43b6-876a-89f19ca08951"
+  ],
+  "GET|api|Marca|:id|botones_disponibles": [
+    "9de1c28d-030d-4ecf-81ef-a4a7cffb974e",
+    "60b45b9b-62ac-44de-afff-c45c2eee4257"
+  ],
+  "GET|api|Marca|:id|productos": [
+    "9986b2f7-45a1-4770-a9cc-ad718e0d6451",
+    "fa84cfe3-9d74-4dd2-885f-a39da3832b49"
+  ],
+  "GET|api|Marca|:id": [
+    "9061f5b6-f6be-4814-8e21-51994d332260",
+    "78734bf7-b37a-4b5c-85f0-261312e404e6"
+  ],
+  "GET|api|Marca": [
+    "f32c55e0-fa30-4b5b-94b8-eda166bd84bd",
+    "488db96d-feae-410e-8497-50b21a8899a9",
+    "96162c83-6cd2-45e4-b538-439733d3eb70"
+  ],
+  "VentanaHoraria": [
+    "6ec8ede1-bfac-4c93-ac46-daacb82371c7"
+  ],
+  "VentanaHoraria|:id": [
+    "45ba003a-7f35-454b-8172-bb6475ec88f8"
+  ],
+  "GET|api|VentanaHoraria|:id|pedidos": [
+    "96023f6f-5952-4216-b583-0f938315fea5",
+    "20497f88-fd0c-4d7c-8a7b-ea1dbcdd1b4f"
+  ],
+  "GET|api|VentanaHoraria|:id": [
+    "17508f77-ead4-4482-8172-cd60af7d0a96",
+    "69dc55e3-3625-4b03-9440-4fa34222e325"
+  ],
+  "GET|api|VentanaHoraria": [
+    "5d044469-aad1-4e46-b292-0bf2656ed516",
+    "40570058-9db4-4c76-b07a-6bb435b991cc"
+  ],
+  "1_Cliente": [
+    "28d2a8ea-78fb-4df3-bba5-2ee35ae67b48"
+  ],
+  "1_Cliente|1_0_Login_y_lista": [
+    "826b850e-dd26-4a06-b523-cf9c1c06a879"
+  ],
+  "1_Cliente|1_1_Direcciones": [
+    "9f061495-a0fd-4cb6-b62e-17d2c2fb31d4"
+  ],
+  "1_Cliente|1_2_Mediospago": [
+    "e14bc44a-4f25-494a-8ac1-e16e81b09e71"
+  ],
+  "1_Cliente|1_3_Transacciones_webpay": [
+    "ab14ad75-e92e-4515-95fc-0c9b74e53f50"
+  ],
+  "1_Cliente|1_4_Notification_token": [
+    "f45ed8eb-b628-4f4e-a7d2-8ae1003f9faa"
+  ],
+  "2_Boton": [
+    "ca148d91-9721-4e4c-92fc-8bdb1f6f0d6b"
+  ],
+  "2_Boton|2_0_Tests Botones: Login y lista": [
+    "5678aa39-9d8d-4f77-8306-505464aaaee0"
+  ],
+  "2_Boton|2_1_Botones del cliente": [
+    "6ba6eff8-a7bb-49ca-99ad-0bb912b681c3"
+  ],
+  "2_Boton|2_2_Productos": [
+    "82febfbd-9aa4-429e-8ec5-63c1738e5acd"
+  ],
+  "2_Boton|2_3_Ventanas_horario": [
+    "5c33cc83-329a-4c91-a801-a1396a023ede"
+  ],
+  "3_Producto": [
+    "aa50a9e0-6624-4928-a099-3932a3061973"
+  ],
+  "3_Producto|3_0_Tests Productos: Login": [
+    "8ffdd237-4bac-44d2-aff5-d0238ac816b6"
+  ],
+  "3_Producto|3_1_Marca": [
+    "223cb7e6-f3f6-4405-8de6-b774fdbe44ff"
+  ],
+  "3_Producto|3_2_Categoria": [
+    "d05dd3d5-591e-4c23-b139-2287de3e1681"
+  ],
+  "4_Pedido": [
+    "50bd2ae2-15c6-474a-9fc3-74176bee9c59"
+  ],
+  "4_Pedido|4_0_Tests Pedidos: Login y lista": [
+    "a47851a4-e3aa-4e17-af2e-cf5f9e414c29"
+  ],
+  "4_Pedido|4_1_Cliente/:id/pedido - pedidos por cliente": [
+    "9b0b7965-9ab3-4cdc-9084-5ab4169154b9"
+  ],
+  "4_Pedido|4_2_Boton/:id/pedido - pedidos por botón": [
+    "8041c03c-71ba-4c87-bc90-c558a07508e5"
+  ],
+  "4_Pedido|4_3_Request utilitarios a un pedido": [
+    "0d52bc37-7dbf-4644-8c6e-e37133f2ede9"
+  ],
+  "4_Pedido|4_4_Entidades relacionadas": [
+    "8992b6a2-07a9-4ac1-ad04-ecd408954950"
+  ],
+  "5_Misc": [
+    "1eab0b19-0406-4718-a0ca-ed61c1de8827"
+  ],
+  "8_Aux_Restore_Entiries": [
+    "aba53e89-27b2-42c8-964e-93047a204780"
+  ],
+  "POST|post": [
+    "f773db21-561b-4580-ad71-41484547a1f3"
+  ],
+  "9_Endpoints_test_fin_pruebas": [
+    "f943f5f0-163b-490a-82df-545c9a5bb61f"
+  ],
+  "9_Endpoints_test_fin_pruebas|9_0_Después de pruebas, saltar al final de las peticiones": [
+    "f4b5a097-cec2-453b-bead-b626ea4a5e91"
+  ],
+  "GET|status": [
+    "97d56933-b8c9-4334-b86d-846bb47d8774"
+  ],
+  "9_Endpoints_test_fin_pruebas|9_1_Custom Methods": [
+    "91e70a67-6c6a-40af-8e4d-a7b78d5ded59"
+  ],
+  "9_Endpoints_test_fin_pruebas|9_2_MyDot Proxy": [
+    "6b299570-d142-4b4c-8769-65b7b51df3de"
+  ],
+  "POST|Term|TestOrder": [
+    "655a5f80-18f7-4ef6-87ed-b66829281392"
+  ],
+  "POST|Term|RecvOrder": [
+    "60ae4f01-e546-494f-93fc-ec2b2cba0c77",
+    "a055d504-2bc0-4493-b7c9-3b6324f6e23a",
+    "4fcc5f52-d249-463f-85c3-36658de1e428",
+    "4fd9fd70-ebfd-43f9-9d63-427651925c59"
+  ]
+}

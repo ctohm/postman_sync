@@ -1,0 +1,3219 @@
+swagger: '2.0'
+info:
+  version: 1.6.1
+  title: api.mydot.app
+  description: API MyDot
+basePath: /api
+paths:
+  /Misc/image:
+    post:
+      tags:
+        - Misc
+      summary: sube una imagen a firebase
+      operationId: Misc.uploadImage
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/banner:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve un banner para mostrar al cliente
+      operationId: Misc.banner
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/banners:
+    get:
+      tags:
+        - Misc
+      summary: Listado de banners por tamaño y posición
+      operationId: Misc.banners
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              type: object
+      deprecated: false
+  /Misc/cobertura:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve el polígono de cobertura como pares de coordenadas
+      operationId: Misc.cobertura
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/coberturaGeoJson:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve el polígono de cobertura como GeoJSON
+      operationId: Misc.coberturaGeoJson
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/tos:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve los términos de servicio en un objeto
+      operationId: Misc.tos
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/privacy:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve la política de privacidad en un objeto
+      operationId: Misc.privacy
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/coberturaFC:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve la cobertura como FeatureCollection (soporta varios polígonos)
+      operationId: Misc.coberturaFC
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/privacidad:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve la política de privacidad como HTML
+      operationId: Misc.privacidad
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/faq:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve las preguntas frecuentes en un objeto
+      operationId: Misc.faq
+      parameters: []
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/preguntas_frecuentes:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve las preguntas frecuentes como HTML
+      operationId: Misc.preguntas_frecuentes
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/echo:
+    post:
+      tags:
+        - Misc
+      summary: Verifica si una direccion tiene cobertura
+      operationId: Misc.echo
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/cspReport:
+    post:
+      tags:
+        - Misc
+      summary: cspReport
+      operationId: Misc.cspReport
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/throwError:
+    post:
+      tags:
+        - Misc
+      summary: Test method to throw custom errors
+      operationId: Misc.throwError
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/hasCobertura:
+    post:
+      tags:
+        - Misc
+      summary: Verifica si una direccion tiene cobertura
+      operationId: Misc.hasCobertura
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /Misc/terminos_de_servicio:
+    get:
+      tags:
+        - Misc
+      summary: Devuelve los términos de servicio como HTML
+      operationId: Misc.terminos_de_servicio
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Misc'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Boton/{id}/cliente':
+    get:
+      tags:
+        - Boton
+      summary: Capta la relación belongsTo cliente.
+      operationId: Boton.prototype.__get__cliente
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Cliente'
+      deprecated: false
+  '/Boton/{id}/direccion':
+    get:
+      tags:
+        - Boton
+      summary: Capta la relación belongsTo direccion.
+      operationId: Boton.prototype.__get__direccion
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Direccion'
+      deprecated: false
+  '/Boton/{id}/mediopago':
+    get:
+      tags:
+        - Boton
+      summary: Capta la relación belongsTo mediopago.
+      operationId: Boton.prototype.__get__mediopago
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/MedioPago'
+      deprecated: false
+  '/Boton/{id}/productos/rel/{fk}':
+    put:
+      tags:
+        - Boton
+      summary: Añadir un elemento relacionado por id para productos.
+      operationId: Boton.prototype.__link__productos
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para productos
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/BotonProducto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/BotonProducto'
+      deprecated: false
+    delete:
+      tags:
+        - Boton
+      summary: Eliminar la relación productos con un elemento por id.
+      operationId: Boton.prototype.__unlink__productos
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para productos
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Boton/{id}/marca':
+    get:
+      tags:
+        - Boton
+      summary: Capta la relación belongsTo marca.
+      operationId: Boton.prototype.__get__marca
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Marca'
+      deprecated: false
+  '/Boton/{id}/ventana_default':
+    get:
+      tags:
+        - Boton
+      summary: Capta la relación belongsTo ventana_default.
+      operationId: Boton.prototype.__get__ventana_default
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/VentanaHoraria'
+      deprecated: false
+  '/Boton/{id}/ventanas_horario/rel/{fk}':
+    put:
+      tags:
+        - Boton
+      summary: Añadir un elemento relacionado por id para ventanas_horario.
+      operationId: Boton.prototype.__link__ventanas_horario
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para ventanas_horario
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/BotonVentanaHoraria'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/BotonVentanaHoraria'
+      deprecated: false
+    delete:
+      tags:
+        - Boton
+      summary: Eliminar la relación ventanas_horario con un elemento por id.
+      operationId: Boton.prototype.__unlink__ventanas_horario
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para ventanas_horario
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Boton/{id}/pedidos':
+    get:
+      tags:
+        - Boton
+      summary: pedidos consultas de Boton.
+      operationId: Boton.prototype.__get__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Pedido'
+      deprecated: false
+    post:
+      tags:
+        - Boton
+      summary: Crea una nueva instancia en pedidos de este modelo.
+      operationId: Boton.prototype.__create__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Pedido'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Pedido'
+      deprecated: false
+  '/Boton/{id}/productos':
+    get:
+      tags:
+        - Boton
+      summary: productos consultas de Boton.
+      operationId: Boton.prototype.__get__productos
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Producto'
+      deprecated: false
+  '/Boton/{id}/ventanas_horario':
+    get:
+      tags:
+        - Boton
+      summary: ventanas_horario consultas de Boton.
+      operationId: Boton.prototype.__get__ventanas_horario
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/VentanaHoraria'
+      deprecated: false
+  '/Boton/{id}':
+    get:
+      tags:
+        - Boton
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Boton.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Boton'
+      deprecated: false
+    patch:
+      tags:
+        - Boton
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Boton.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Boton'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Boton'
+      deprecated: false
+  /Boton:
+    get:
+      tags:
+        - Boton
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Boton.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Boton'
+      deprecated: false
+  '/Boton/{id}/relatedProducts':
+    get:
+      tags:
+        - Boton
+      summary: >-
+        Devuelve los productos que se pueden asociar a un botón dado
+
+        (deprecated: un llamado a GET /api/Boton/:id/producto_marca entrega lo
+        mismo
+
+        evitando la utilización de un método custom
+      operationId: Boton.prototype.relatedProducts
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Listado de productos
+            type: array
+            items:
+              $ref: '#/definitions/Producto'
+      deprecated: false
+  '/Boton/{id}/resumen':
+    get:
+      tags:
+        - Boton
+      summary: Lista un resumen de la configuración del botón
+      operationId: Boton.prototype.resumen
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Boton/{id}/producto_marca':
+    get:
+      tags:
+        - Boton
+      summary: Devuelve los productos que se pueden asociar a un botón dado
+      operationId: Boton.prototype.producto_marca
+      parameters:
+        - name: id
+          in: path
+          description: Boton id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Listado de productos
+            type: array
+            items:
+              $ref: '#/definitions/Producto'
+      deprecated: false
+  /Boton/claim:
+    post:
+      tags:
+        - Boton
+      summary: |-
+        Inscribe un botón a nombre del usuario
+        (Deprecated) Utilizar ```PATCH /api/Boton/{idBoton}```
+      operationId: Boton.claim
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Boton'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Cliente/{id}/botones/{fk}':
+    get:
+      tags:
+        - Cliente
+      summary: Buscar un elemento relacionado por id para botones.
+      operationId: Cliente.prototype.__findById__botones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para botones
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Boton'
+      deprecated: false
+    put:
+      tags:
+        - Cliente
+      summary: Actualizar un elemento relacionado por id para botones.
+      operationId: Cliente.prototype.__updateById__botones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para botones
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Boton'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Boton'
+      deprecated: false
+  '/Cliente/{id}/notification_token/{fk}':
+    get:
+      tags:
+        - Cliente
+      summary: Buscar un elemento relacionado por id para notification_token.
+      operationId: Cliente.prototype.__findById__notification_token
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para notification_token
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/NotificationToken'
+      deprecated: false
+    delete:
+      tags:
+        - Cliente
+      summary: Suprimir un elemento relacionado por id para notification_token.
+      operationId: Cliente.prototype.__destroyById__notification_token
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para notification_token
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Cliente/{id}/direcciones/{fk}':
+    get:
+      tags:
+        - Cliente
+      summary: Buscar un elemento relacionado por id para direcciones.
+      operationId: Cliente.prototype.__findById__direcciones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para direcciones
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Direccion'
+      deprecated: false
+    delete:
+      tags:
+        - Cliente
+      summary: Suprimir un elemento relacionado por id para direcciones.
+      operationId: Cliente.prototype.__destroyById__direcciones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para direcciones
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Cliente
+      summary: Actualizar un elemento relacionado por id para direcciones.
+      operationId: Cliente.prototype.__updateById__direcciones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para direcciones
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Direccion'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Direccion'
+      deprecated: false
+  '/Cliente/{id}/direccion_default':
+    get:
+      tags:
+        - Cliente
+      summary: Capta la relación belongsTo direccion_default.
+      operationId: Cliente.prototype.__get__direccion_default
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Direccion'
+      deprecated: false
+  '/Cliente/{id}/mediospago/{fk}':
+    get:
+      tags:
+        - Cliente
+      summary: Buscar un elemento relacionado por id para mediospago.
+      operationId: Cliente.prototype.__findById__mediospago
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para mediospago
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/MedioPago'
+      deprecated: false
+    delete:
+      tags:
+        - Cliente
+      summary: Suprimir un elemento relacionado por id para mediospago.
+      operationId: Cliente.prototype.__destroyById__mediospago
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para mediospago
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Cliente/{id}/mediopago_default':
+    get:
+      tags:
+        - Cliente
+      summary: Capta la relación belongsTo mediopago_default.
+      operationId: Cliente.prototype.__get__mediopago_default
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/MedioPago'
+      deprecated: false
+  '/Cliente/{id}/pedidos/{fk}':
+    get:
+      tags:
+        - Cliente
+      summary: Buscar un elemento relacionado por id para pedidos.
+      operationId: Cliente.prototype.__findById__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para pedidos
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Pedido'
+      deprecated: false
+    delete:
+      tags:
+        - Cliente
+      summary: Suprimir un elemento relacionado por id para pedidos.
+      operationId: Cliente.prototype.__destroyById__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para pedidos
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Cliente/{id}/transacciones_webpay/{fk}':
+    get:
+      tags:
+        - Cliente
+      summary: Buscar un elemento relacionado por id para transacciones_webpay.
+      operationId: Cliente.prototype.__findById__transacciones_webpay
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: fk
+          in: path
+          description: Clave foránea para transacciones_webpay
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/WebpayTransaccion'
+      deprecated: false
+  '/Cliente/{id}/botones':
+    get:
+      tags:
+        - Cliente
+      summary: botones consultas de Cliente.
+      operationId: Cliente.prototype.__get__botones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Boton'
+      deprecated: false
+  '/Cliente/{id}/notification_token':
+    get:
+      tags:
+        - Cliente
+      summary: notification_token consultas de Cliente.
+      operationId: Cliente.prototype.__get__notification_token
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/NotificationToken'
+      deprecated: false
+    post:
+      tags:
+        - Cliente
+      summary: Crea o actualiza un notification token
+      operationId: Cliente.prototype.upsertNotificationToken
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/NotificationToken'
+      deprecated: false
+  '/Cliente/{id}/direcciones':
+    get:
+      tags:
+        - Cliente
+      summary: direcciones consultas de Cliente.
+      operationId: Cliente.prototype.__get__direcciones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Direccion'
+      deprecated: false
+    post:
+      tags:
+        - Cliente
+      summary: Crea una nueva instancia en direcciones de este modelo.
+      operationId: Cliente.prototype.__create__direcciones
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Direccion'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Direccion'
+      deprecated: false
+  '/Cliente/{id}/mediospago':
+    get:
+      tags:
+        - Cliente
+      summary: mediospago consultas de Cliente.
+      operationId: Cliente.prototype.__get__mediospago
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/MedioPago'
+      deprecated: false
+    post:
+      tags:
+        - Cliente
+      summary: Crea una nueva instancia en mediospago de este modelo.
+      operationId: Cliente.prototype.__create__mediospago
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/MedioPago'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/MedioPago'
+      deprecated: false
+  '/Cliente/{id}/pedidos':
+    get:
+      tags:
+        - Cliente
+      summary: pedidos consultas de Cliente.
+      operationId: Cliente.prototype.__get__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Pedido'
+      deprecated: false
+    post:
+      tags:
+        - Cliente
+      summary: Crea una nueva instancia en pedidos de este modelo.
+      operationId: Cliente.prototype.__create__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Pedido'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Pedido'
+      deprecated: false
+  '/Cliente/{id}/transacciones_webpay':
+    get:
+      tags:
+        - Cliente
+      summary: transacciones_webpay consultas de Cliente.
+      operationId: Cliente.prototype.__get__transacciones_webpay
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WebpayTransaccion'
+      deprecated: false
+  /Cliente:
+    post:
+      tags:
+        - Cliente
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Cliente.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Cliente'
+      deprecated: false
+    get:
+      tags:
+        - Cliente
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Cliente.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Cliente'
+      deprecated: false
+  '/Cliente/{id}':
+    get:
+      tags:
+        - Cliente
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Cliente.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Cliente'
+      deprecated: false
+    patch:
+      tags:
+        - Cliente
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Cliente.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Cliente'
+      deprecated: false
+  /Cliente/login:
+    post:
+      tags:
+        - Cliente
+      summary: Login a user with username/email and password.
+      operationId: Cliente.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: >-
+            Related objects to include in the response. See the description of
+            return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              El cuerpo de respuesta contiene propiedades de la AccessToken
+              creada durante el inicio de la sesión.
+
+              Dependiendo del valor del parámetro `include`, el cuerpo puede
+              contener propiedades adicionales:
+
+                - `user` - `U+007BUserU+007D` - Datos del usuario conectado actualmente. (`include=user`)
+
+            type: object
+      deprecated: false
+  /Cliente/logout:
+    post:
+      tags:
+        - Cliente
+      summary: Logout a user with access token.
+      operationId: Cliente.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Cliente/{id}/verify':
+    post:
+      tags:
+        - Cliente
+      summary: Trigger user's identity verification with configured verifyOptions
+      operationId: Cliente.prototype.verify
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Cliente/confirm:
+    get:
+      tags:
+        - Cliente
+      summary: Confirm a user registration with identity verification token.
+      operationId: Cliente.confirm
+      parameters:
+        - name: uid
+          in: query
+          required: true
+          type: string
+        - name: token
+          in: query
+          required: true
+          type: string
+        - name: redirect
+          in: query
+          required: false
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Cliente/reset:
+    post:
+      tags:
+        - Cliente
+      summary: Reset password for a user with email.
+      operationId: Cliente.resetPassword
+      parameters:
+        - name: options
+          in: body
+          required: true
+          schema:
+            type: object
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Cliente/change-password:
+    post:
+      tags:
+        - Cliente
+      summary: Change a user's password.
+      operationId: Cliente.changePassword
+      parameters:
+        - name: oldPassword
+          in: formData
+          required: true
+          type: string
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Cliente/reset-password:
+    post:
+      tags:
+        - Cliente
+      summary: Reset user's password via a password-reset token.
+      operationId: Cliente.setPassword
+      parameters:
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Cliente/isButtonClaimed/{idBoton}':
+    get:
+      tags:
+        - Cliente
+      summary: Verifica si un botón ya ha sido inscrito por este u otro cliente
+      operationId: Cliente.isButtonClaimed
+      parameters:
+        - name: idBoton
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Cliente/ventanasDireccion/{idDireccion}':
+    get:
+      tags:
+        - Cliente
+      summary: >-
+        Lista ventanas horarias con el costo de despacho para una dirección
+        específica
+      operationId: Cliente.ventanasDireccion
+      parameters:
+        - name: idDireccion
+          in: path
+          required: true
+          type: number
+          format: double
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/VentanaHoraria'
+      deprecated: false
+  /Cliente/fbauth:
+    post:
+      tags:
+        - Cliente
+      summary: Inscribe o loguea a un usuario usando facebook
+      operationId: Cliente.fbAuth
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Cliente/{id}/notification_token/sendToTopic':
+    post:
+      tags:
+        - Cliente
+      summary: envía notificación al topic del usuario
+      operationId: Cliente.prototype.sendToTopic
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Cliente/{id}/notification_token/sendToDeviceGroup':
+    post:
+      tags:
+        - Cliente
+      summary: envía notificación al un grupo arbitrario
+      operationId: Cliente.prototype.sendToDeviceGroup
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Cliente/{id}/notification_token/sendToDevice':
+    post:
+      tags:
+        - Cliente
+      summary: envía notificación a un token específico
+      operationId: Cliente.prototype.sendToDevice
+      parameters:
+        - name: id
+          in: path
+          description: Cliente id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Cliente'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Pedido/{id}/direccion':
+    get:
+      tags:
+        - Pedido
+      summary: Capta la relación belongsTo direccion.
+      operationId: Pedido.prototype.__get__direccion
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Direccion'
+      deprecated: false
+  '/Pedido/{id}/mediopago':
+    get:
+      tags:
+        - Pedido
+      summary: Capta la relación belongsTo mediopago.
+      operationId: Pedido.prototype.__get__mediopago
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/MedioPago'
+      deprecated: false
+  '/Pedido/{id}/estado':
+    get:
+      tags:
+        - Pedido
+      summary: Capta la relación belongsTo estado.
+      operationId: Pedido.prototype.__get__estado
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PedidoEstado'
+      deprecated: false
+  '/Pedido/{id}/transaccion':
+    get:
+      tags:
+        - Pedido
+      summary: Capta la relación hasOne transaccion.
+      operationId: Pedido.prototype.__get__transaccion
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/WebpayTransaccion'
+      deprecated: false
+  '/Pedido/{id}/historial':
+    get:
+      tags:
+        - Pedido
+      summary: historial consultas de Pedido.
+      operationId: Pedido.prototype.__get__historial
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PedidoHistorial'
+      deprecated: false
+  '/Pedido/{id}':
+    get:
+      tags:
+        - Pedido
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Pedido.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Pedido'
+      deprecated: false
+    patch:
+      tags:
+        - Pedido
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Pedido.prototype.patchAttributes
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Pedido'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Pedido'
+      deprecated: false
+  /Pedido:
+    get:
+      tags:
+        - Pedido
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Pedido.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Pedido'
+      deprecated: false
+  '/Pedido/{id}/resumen':
+    get:
+      tags:
+        - Pedido
+      summary: Lista un resumen del pedido
+      operationId: Pedido.prototype.resumen
+      parameters:
+        - name: id
+          in: path
+          description: Pedido id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Pedido/costo_despacho/{monto}':
+    get:
+      tags:
+        - Pedido
+      summary: Lista costo despacho dado un monto
+      operationId: Pedido.costo_despacho
+      parameters:
+        - name: monto
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  '/Producto/{id}/categoria':
+    get:
+      tags:
+        - Producto
+      summary: Capta la relación belongsTo categoria.
+      operationId: Producto.prototype.__get__categoria
+      parameters:
+        - name: id
+          in: path
+          description: Producto id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ProductoCategoria'
+      deprecated: false
+  '/Producto/{id}/marca':
+    get:
+      tags:
+        - Producto
+      summary: Capta la relación belongsTo marca.
+      operationId: Producto.prototype.__get__marca
+      parameters:
+        - name: id
+          in: path
+          description: Producto id
+          required: true
+          type: string
+          format: JSON
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Marca'
+      deprecated: false
+  /Producto/botones:
+    get:
+      tags:
+        - Producto
+      summary: botones consultas de Producto.
+      operationId: Producto.__get__botones
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Boton'
+      deprecated: false
+  /Producto/consumibles:
+    get:
+      tags:
+        - Producto
+      summary: consumibles consultas de Producto.
+      operationId: Producto.__get__consumibles
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Producto'
+      deprecated: false
+  '/Producto/{id}/comunas_restringidas':
+    get:
+      tags:
+        - Producto
+      summary: comunas_restringidas consultas de Producto.
+      operationId: Producto.prototype.__get__comunas_restringidas
+      parameters:
+        - name: id
+          in: path
+          description: Producto id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Comuna'
+      deprecated: false
+  '/Producto/{id}':
+    get:
+      tags:
+        - Producto
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Producto.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Producto'
+      deprecated: false
+  /Producto:
+    get:
+      tags:
+        - Producto
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Producto.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Producto'
+      deprecated: false
+  '/Producto/{id}/image':
+    post:
+      tags:
+        - Producto
+      summary: actualiza la imagen del Producto
+      operationId: Producto.prototype.uploadImage
+      parameters:
+        - name: id
+          in: path
+          description: Producto id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/Producto'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+  /ProductoCategoria/botones:
+    get:
+      tags:
+        - ProductoCategoria
+      summary: botones consultas de ProductoCategoria.
+      operationId: ProductoCategoria.__get__botones
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductoCategoria'
+      deprecated: false
+  /ProductoCategoria/consumibles:
+    get:
+      tags:
+        - ProductoCategoria
+      summary: consumibles consultas de ProductoCategoria.
+      operationId: ProductoCategoria.__get__consumibles
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductoCategoria'
+      deprecated: false
+  '/ProductoCategoria/{id}':
+    get:
+      tags:
+        - ProductoCategoria
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: ProductoCategoria.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ProductoCategoria'
+      deprecated: false
+  /ProductoCategoria:
+    get:
+      tags:
+        - ProductoCategoria
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: ProductoCategoria.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductoCategoria'
+      deprecated: false
+  '/Marca/{id}/botones':
+    get:
+      tags:
+        - Marca
+      summary: botones consultas de Marca.
+      operationId: Marca.prototype.__get__botones
+      parameters:
+        - name: id
+          in: path
+          description: Marca id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Boton'
+      deprecated: false
+  '/Marca/{id}/botones_disponibles':
+    get:
+      tags:
+        - Marca
+      summary: botones_disponibles consultas de Marca.
+      operationId: Marca.prototype.__get__botones_disponibles
+      parameters:
+        - name: id
+          in: path
+          description: Marca id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/BotonDisponible'
+      deprecated: false
+  '/Marca/{id}/productos':
+    get:
+      tags:
+        - Marca
+      summary: productos consultas de Marca.
+      operationId: Marca.prototype.__get__productos
+      parameters:
+        - name: id
+          in: path
+          description: Marca id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Producto'
+      deprecated: false
+  '/Marca/{id}':
+    get:
+      tags:
+        - Marca
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Marca.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Marca'
+      deprecated: false
+  /Marca:
+    get:
+      tags:
+        - Marca
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Marca.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Marca'
+      deprecated: false
+  '/VentanaHoraria/{id}/pedidos':
+    get:
+      tags:
+        - VentanaHoraria
+      summary: pedidos consultas de VentanaHoraria.
+      operationId: VentanaHoraria.prototype.__get__pedidos
+      parameters:
+        - name: id
+          in: path
+          description: VentanaHoraria id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Pedido'
+      deprecated: false
+  '/VentanaHoraria/{id}':
+    get:
+      tags:
+        - VentanaHoraria
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: VentanaHoraria.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/VentanaHoraria'
+      deprecated: false
+  /VentanaHoraria:
+    get:
+      tags:
+        - VentanaHoraria
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: VentanaHoraria.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string (`{"where":{"something":"value"}}`). 
+            See
+            https://loopback.io/doc/en/lb3/Querying-data.html#using-stringified-json-in-rest-queries
+            for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/VentanaHoraria'
+      deprecated: false
+tags:
+  - name: Misc
+    description: Endpoints no relacionados a ningún modelo en particular
+  - name: Boton
+    description: Los botones de un Cliente
+  - name: Cliente
+    description: >-
+      Usuarios finales del servicio myDot. Tienen la App instalada en su
+      dispositivo
+  - name: Pedido
+    description: >-
+      Pedido generado por Botón o App. Sólo visible para Cliente dueño y
+      Operadores
+  - name: Producto
+    description: Los productos disponibles para comprar
+  - name: ProductoCategoria
+    description: Categorías de producto
+  - name: Marca
+    description: Marcas de producto (pueden ser de un mismo fabricante)
+  - name: VentanaHoraria
+    description: 'Franjas horarias de despacho (8:00 a 22:00) y entrega inmediata'
+consumes:
+  - application/json
+  - application/x-www-form-urlencoded
+  - application/xml
+  - text/xml
+produces:
+  - application/json
+  - application/xml
+  - text/xml
+  - application/javascript
+  - text/javascript
+definitions:
+  Misc:
+    description: Endpoints no relacionados a ningún modelo en particular
+    properties:
+      id:
+        type: number
+        format: double
+    additionalProperties: false
+  x-any:
+    properties: {}
+  Cliente:
+    description: >-
+      Usuarios finales del servicio myDot. Tienen la App instalada en su
+      dispositivo
+    properties:
+      id:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      rut:
+        maxLength: 12
+        pattern: '\d{1,2}\.{0,1}\d{3}\.{0,1}\d{3}-[0-9Kk]'
+        type: string
+      email:
+        maxLength: 36
+        format: email
+        type: string
+      telefono:
+        maxLength: 15
+        pattern: '^56\d{1} \d{4} \d{4}$'
+        type: string
+      username:
+        maxLength: 128
+        type: string
+      apellido:
+        maxLength: 128
+        type: string
+      despachoGratis:
+        maxLength: 1
+        format: integer
+        default: 1
+        type: number
+      avatar:
+        maxLength: 512
+        default: 'https://static.mydot.app/avatar.png'
+        type: string
+      id_mediopago_default:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      id_direccion_default:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      updatedAt:
+        format: date-time
+        type: string
+    required:
+      - email
+    additionalProperties: false
+  Direccion:
+    description: Las direcciones de un Cliente
+    properties:
+      id:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      idCliente:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      direccion:
+        maxLength: 65535
+        type: string
+      numero:
+        maxLength: 512
+        description: 'Si aplica, el depto, oficina, letra o numeración interior'
+        type: string
+      instrucciones:
+        description: 'Indicaciones para llegar, despachar, etc a esta dirección'
+        type: string
+      conCobertura:
+        default: false
+        type: boolean
+      comuna:
+        maxLength: 64
+        type: string
+      region:
+        maxLength: 128
+        type: string
+      pais:
+        maxLength: 64
+        type: string
+      lng:
+        maxLength: 7
+        format: float
+        default: -30.78
+        minimum: -80
+        maximum: 80
+        type: number
+      lat:
+        maxLength: 7
+        format: float
+        default: -70.38
+        minimum: -80
+        maximum: 80
+        type: number
+      geom:
+        $ref: '#/definitions/GeoPoint'
+      link:
+        type: string
+    required:
+      - direccion
+      - lng
+      - lat
+    additionalProperties: false
+  MedioPago:
+    description: Los medios de pago de un Cliente
+    properties:
+      id:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      idCliente:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      username:
+        type: string
+      idEstado:
+        maxLength: 2
+        format: integer
+        default: 1
+        type: number
+      nombreEstado:
+        type: string
+      ordenCompra:
+        type: string
+      creditCardType:
+        default: Visa
+        type: string
+      responseCode:
+        type: string
+      responseMessage:
+        maxLength: 65535
+        type: string
+      last4CardDigits:
+        maxLength: 4
+        pattern: '\d{4}'
+        type: string
+      numero:
+        maxLength: 20
+        pattern: '\*{4} \*{4} \*{4} \d{4}'
+        type: string
+      alias:
+        type: string
+    additionalProperties: false
+  BotonProducto:
+    description: Relación entre un botón y los productos que ordena al presionar
+    properties:
+      idBoton:
+        maxLength: 12
+        pattern: '[0-9A-F]{12}'
+        type: string
+      idProducto:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      cantidad:
+        format: integer
+        default: 1
+        pattern: '\d{1}'
+        type: number
+    required:
+      - idBoton
+      - idProducto
+    additionalProperties: false
+  Marca:
+    description: Marcas de producto (pueden ser de un mismo fabricante)
+    properties:
+      id:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      nombreMarca:
+        maxLength: 65535
+        type: string
+      image:
+        maxLength: 512
+        type: string
+      idFabricante:
+        format: integer
+        type: number
+      categoriaPrincipal:
+        maxLength: 64
+        type: string
+    required:
+      - id
+      - nombreMarca
+      - idFabricante
+    additionalProperties: false
+  VentanaHoraria:
+    description: 'Franjas horarias de despacho (8:00 a 22:00) y entrega inmediata'
+    properties:
+      id:
+        maxLength: 2
+        format: integer
+        minimum: 1
+        maximum: 26
+        type: number
+      nombre:
+        maxLength: 64
+        type: string
+      horaInicio:
+        format: integer
+        type: number
+      horaFin:
+        format: integer
+        type: number
+      isInmediate:
+        default: false
+        type: boolean
+      costoDespacho:
+        maxLength: 5
+        format: integer
+        minimum: 0
+        maximum: 99999
+        pattern: '\d{1,5}'
+        type: number
+    required:
+      - id
+      - nombre
+      - horaInicio
+      - horaFin
+      - costoDespacho
+    additionalProperties: false
+  BotonVentanaHoraria:
+    description: Representa la relación ManyToMany entre botones y ventanas horarias
+    properties:
+      idBoton:
+        maxLength: 12
+        pattern: '[0-9A-F]{12}'
+        type: string
+      idVentana:
+        maxLength: 2
+        format: integer
+        minimum: 1
+        maximum: 24
+        pattern: '\d{2}'
+        type: number
+    required:
+      - idBoton
+      - idVentana
+    additionalProperties: false
+  Pedido:
+    description: >-
+      Pedido generado por Botón o App. Sólo visible para Cliente dueño y
+      Operadores
+    properties:
+      id:
+        maxLength: 5
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      idProducto:
+        maxLength: 5
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      idMediopago:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      idTransaccion:
+        maxLength: 16
+        format: integer
+        minimum: 1565000000000001
+        maximum: 8565073562300389
+        pattern: '\d{16}'
+        type: number
+      idDireccion:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      idEstado:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 9
+        pattern: '\d{1}'
+        type: number
+      idCliente:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: ID del cliente que gatilla el pedido (se lee del token)
+        type: number
+      idBoton:
+        maxLength: 12
+        pattern: '[0-9A-F]{12}'
+        type: string
+      precioNeto:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 250000
+        pattern: '\d{6}'
+        description: 'Precio neto, igual a la suma de los productos que componen el pedido'
+        type: number
+      costoDespacho:
+        maxLength: 7
+        format: integer
+        default: 0
+        minimum: 0
+        maximum: 250000
+        pattern: '\d{6}'
+        description: >-
+          Costo del despacho, a priori cero para pedidos cuyo neto es mayor a
+          10.000
+        type: number
+      descuento:
+        maxLength: 7
+        format: integer
+        default: 0
+        minimum: 0
+        maximum: 250000
+        pattern: '\d{6}'
+        description: Descuento aplicado por promociones o saldo a favor en el Botón
+        type: number
+      descuento_primer_pedido:
+        maxLength: 7
+        format: integer
+        default: 0
+        minimum: 0
+        maximum: 250000
+        pattern: '\d{6}'
+        description: Descuento aplicado sobre el despacho en el primer pedido del cliente
+        type: number
+      precioTotal:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 250000
+        pattern: '\d{6}'
+        description: >-
+          Precio a pagar por el pedido = (precio neto + costo despacho -
+          descuento)
+        type: number
+      idMarca:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: Marca que limita los productos de este botón
+        type: number
+      nombreMarca:
+        maxLength: 64
+        description: Marca del los productos del pedido
+        type: string
+      createdAt:
+        format: date-time
+        type: string
+      updatedAt:
+        format: date-time
+        type: string
+    additionalProperties: false
+  Producto:
+    description: Los productos disponibles para comprar
+    properties:
+      id:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      descripcion:
+        maxLength: 65535
+        type: string
+      sku:
+        format: '[A-Z]{5,8}00\w{2}'
+        maxLength: 14
+        type: string
+      idCategoria:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        type: number
+      nombre_categoria:
+        maxLength: 64
+        type: string
+      idMarca:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        type: number
+      nombreMarca:
+        maxLength: 64
+        description: Marca del producto
+        type: string
+      precioBase:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      descuento:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        type: number
+      isButton:
+        description: Define si el producto es un botón o un consumible
+        type: boolean
+      image:
+        format: uri
+        maxLength: 512
+        type: string
+    required:
+      - id
+      - descripcion
+      - idCategoria
+      - idMarca
+      - precioBase
+      - descuento
+    additionalProperties: false
+  Boton:
+    description: Los botones de un Cliente
+    properties:
+      id:
+        maxLength: 12
+        pattern: '[0-9A-F]{12}'
+        type: string
+      idMarca:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: Marca que limita los productos de este botón
+        type: number
+      idCliente:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: ID del cliente que compró este dot
+        type: number
+      idMediopago:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: Medio de pago asociado a este botón
+        type: number
+      idDireccion:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: Dirección de despacho asociada a este botón
+        type: number
+      isActive:
+        default: true
+        type: boolean
+      nombreMarca:
+        maxLength: 64
+        description: Marca del botón
+        type: string
+      ssid:
+        maxLength: 128
+        description: SSID de la wifi asociada al botón
+        type: string
+      saldo:
+        maxLength: 5
+        format: integer
+        default: 5000
+        minimum: 0
+        maximum: 99999
+        pattern: '\d{5}'
+        description: Saldo a favor cargado en el botón
+        type: number
+      comment:
+        maxLength: 512
+        description: Comentario arbitrario en esta entidad
+        type: string
+    required:
+      - id
+      - idCliente
+    additionalProperties: false
+  NotificationToken:
+    description: Modelo Básico que extiende PersistedModel
+    properties:
+      deviceId:
+        type: string
+      idCliente:
+        type: number
+        format: double
+      platform:
+        type: string
+      config_props:
+        type: object
+      topic:
+        type: string
+      access_token:
+        type: string
+      createdAt:
+        format: date-time
+        type: string
+      updatedAt:
+        format: date-time
+        type: string
+    required:
+      - deviceId
+    additionalProperties: false
+  WebpayTransaccion:
+    description: Transacción registrada a través de Webpay OneClick
+    properties:
+      id:
+        maxLength: 16
+        format: integer
+        minimum: 1565000000000001
+        maximum: 8565073562300389
+        pattern: '\d{16}'
+        type: number
+      buyOrder:
+        type: number
+        format: double
+      idPedido:
+        type: number
+        format: double
+      idMediopago:
+        type: number
+        format: double
+      transactionId:
+        type: number
+        format: double
+      amount:
+        type: number
+        format: double
+      status:
+        maxLength: 32
+        type: string
+      responseCode:
+        type: number
+        format: double
+      responseCodeLocaleSpanish:
+        maxLength: 65535
+        type: string
+      responseMessage:
+        maxLength: 65535
+        type: string
+      last4CardDigits:
+        maxLength: 4
+        default: '0000'
+        pattern: '\d{4}'
+        type: string
+      creditCardType:
+        default: Visa
+        type: string
+      authorizationCode:
+        type: string
+      reverseCode:
+        type: string
+      createdAt:
+        format: date-time
+        type: string
+      tbkUser:
+        type: string
+      updatedAt:
+        format: date-time
+        type: string
+    required:
+      - id
+      - idMediopago
+      - amount
+      - last4CardDigits
+    additionalProperties: false
+  PedidoEstado:
+    description: Estados posibles en que puede encontrarse un pedido
+    properties:
+      id:
+        maxLength: 2
+        format: integer
+        minimum: 1
+        maximum: 10
+        type: number
+      nombreEstado:
+        maxLength: 64
+        type: string
+      descripcion:
+        maxLength: 256
+        type: string
+      detalle:
+        maxLength: 256
+        type: string
+      soloEstadoInicial:
+        maxLength: 1
+        default: 0
+        description: >-
+          No se puede devolver un pedido al estado inicial cuando ha pasado por
+          otro estado
+        type: number
+        format: double
+      soloEstadoFinal:
+        maxLength: 1
+        default: 0
+        description: >-
+          No se puede cambiar el estado de un pedido que está en un estado final
+          (Entregado o Fallido)
+        type: number
+        format: double
+      estadoCancelado:
+        maxLength: 1
+        default: 0
+        description: >-
+          Cancelado: No se puede pasar a este estado desde un estado final. No
+          se puede modificar este estado.
+        type: number
+        format: double
+    required:
+      - id
+      - nombreEstado
+      - descripcion
+      - detalle
+    additionalProperties: false
+  PedidoHistorial:
+    description: Historial de los distintos estados por los que ha pasado un pedido
+    properties:
+      id:
+        format: integer
+        type: number
+      idPedido:
+        format: integer
+        type: number
+      idEstado:
+        format: integer
+        type: number
+    required:
+      - id
+      - idPedido
+      - idEstado
+    additionalProperties: false
+  ProductoCategoria:
+    description: Categorías de producto
+    properties:
+      id:
+        maxLength: 3
+        format: integer
+        minimum: 1
+        maximum: 100
+        type: number
+      descripcion:
+        maxLength: 65535
+        type: string
+    required:
+      - id
+      - descripcion
+    additionalProperties: false
+  Comuna:
+    description: Comuna asociada a una dirección
+    properties:
+      id:
+        maxLength: 5
+        format: '\w{5}'
+        type: string
+      nombreComuna:
+        maxLength: 64
+        type: string
+      idProvincia:
+        maxLength: 3
+        type: string
+      nombreProvincia:
+        maxLength: 256
+        type: string
+      idRegion:
+        maxLength: 2
+        type: string
+      nombreRegion:
+        maxLength: 256
+        type: string
+    required:
+      - id
+      - nombreComuna
+      - idProvincia
+      - nombreProvincia
+      - idRegion
+      - nombreRegion
+    additionalProperties: false
+  BotonDisponible:
+    description: Los botones disponibles asociados a una marca
+    properties:
+      id:
+        maxLength: 12
+        pattern: '[0-9A-F]{12}'
+        type: string
+      idMarca:
+        maxLength: 7
+        format: integer
+        minimum: 1
+        maximum: 10000
+        pattern: '\d{3}'
+        description: Marca que limita los productos de este botón
+        type: number
+    required:
+      - id
+    additionalProperties: false
+  GeoPoint:
+    properties:
+      lat:
+        type: number
+      lng:
+        type: number

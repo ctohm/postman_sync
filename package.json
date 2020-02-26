@@ -1,0 +1,52 @@
+{
+  "name": "@huasofoundries/postman_sync",
+  "version": "1.0.0",
+  "description": "This package deals with postman and openapi specs and tests",
+  "main": "index.js",
+  "repository": "github.com:HuasoFoundries/postman_sync.git",
+  "author": "ffflabs <amenadiel@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "generate_openapi": "yarn generate_openapi:yaml && yarn generate_openapi:json",
+    "generate_openapi:json": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=json specs/swagger/swagger-spec.json > specs/openapi-spec.json",
+    "generate_openapi:yaml": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=yaml specs/swagger/swagger-spec.yaml > specs/openapi-spec.yaml",
+    "lint": "eslint server",
+    "postman": "yarn postman:download && yarn swagger && yarn postman:export",
+    "postman:download": "DEBUG=* node lib/download.js",
+    "postman:export": "DEBUG=pm_sync:* node lib/export_to_postman.js",
+    "postman:inspect": "DEBUG=pm_sync:* node lib/inspect.js",
+    "postman:inspect_upload": "yarn postman:inspect && yarn postman:justupload",
+    "postman:upload": "DEBUG=* node lib/upload.js",
+    "reduce": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/postman-reduce.js",
+    "swagger": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/normalize_swagger.js && yarn generate_openapi"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "api-spec-transformer": "^0.2.6",
+    "bluebird": "^3.7.2",
+    "chalk": "^3.0.0",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "js-yaml": "^3.13.1",
+    "json-schema-ref-parser": "^7.1.3",
+    "lodash": "^4.17.15",
+    "mkdir": "^0.0.2",
+    "mkdirp": "^1.0.3",
+    "node-fetch": "^2.6.0",
+    "openapi-schema-to-json-schema": "^2.2.0",
+    "postman-collection": "^3.5.5",
+    "swagger2-postman2-parser": "^1.0.5",
+    "tv4": "^1.3.0",
+    "util": "^0.12.2",
+    "yaml": "^1.7.2",
+    "yarn": "^1.22.0"
+  }
+}

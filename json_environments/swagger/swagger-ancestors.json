@@ -1,0 +1,359 @@
+{
+  "Misc": {
+    "api|Misc|image": {
+      "edf2d739-9985-48f2-a604-a8220130f178": "POST|api|Misc|image"
+    },
+    "api|Misc|banner": {
+      "84988685-cb1e-4deb-ad05-b5ab2a358313": "GET|api|Misc|banner"
+    },
+    "api|Misc|banners": {
+      "f0ecdad8-8d6e-4987-8d35-3626c8817762": "GET|api|Misc|banners"
+    },
+    "api|Misc|cobertura": {
+      "7ea4f59f-b9be-43f2-bb34-c85377fecf41": "GET|api|Misc|cobertura"
+    },
+    "api|Misc|coberturaGeoJson": {
+      "afc6c90d-2657-4adc-874f-5d838079f17f": "GET|api|Misc|coberturaGeoJson"
+    },
+    "api|Misc|tos": {
+      "67da3986-6b61-4519-bef2-a4c61b73583f": "GET|api|Misc|tos"
+    },
+    "api|Misc|privacy": {
+      "21705aaa-c955-450e-9cdd-f67ad0ce9037": "GET|api|Misc|privacy"
+    },
+    "api|Misc|coberturaFC": {
+      "5a61d900-311d-4e97-873a-2a76d2ee6e45": "GET|api|Misc|coberturaFC"
+    },
+    "api|Misc|privacidad": {
+      "97ba77e3-5334-4c53-8369-60f6cf566217": "GET|api|Misc|privacidad"
+    },
+    "api|Misc|faq": {
+      "ac2f0b82-f4cb-477d-bfbd-33d5b2cb4a63": "GET|api|Misc|faq"
+    },
+    "api|Misc|preguntas_frecuentes": {
+      "80a2233d-5a86-44c5-b8ae-ce8c20fb9e3f": "GET|api|Misc|preguntas_frecuentes"
+    },
+    "api|Misc|echo": {
+      "715e473f-ab02-49e2-8c6a-9a02adc42e5a": "POST|api|Misc|echo"
+    },
+    "api|Misc|cspReport": {
+      "b130b93a-797f-4100-9d9b-6d3f81982eab": "POST|api|Misc|cspReport"
+    },
+    "api|Misc|throwError": {
+      "c44778c7-4cfd-4183-9955-7a6b5aa39149": "POST|api|Misc|throwError"
+    },
+    "api|Misc|hasCobertura": {
+      "a1e7ce6b-90fc-4fd9-bea8-d60d4fd88458": "POST|api|Misc|hasCobertura"
+    },
+    "api|Misc|terminos_de_servicio": {
+      "73d8d91c-78eb-4b45-b3f7-48b58cc71bb4": "GET|api|Misc|terminos_de_servicio"
+    }
+  },
+  "Boton": {
+    "Boton|:id": {
+      "api|Boton|:id|cliente": {
+        "3375fe62-a476-4777-afa2-a2da1c29c190": "GET|api|Boton|:id|cliente"
+      },
+      "api|Boton|:id|direccion": {
+        "1ee30e56-fdf6-4273-97e2-e0f1c41002c1": "GET|api|Boton|:id|direccion"
+      },
+      "api|Boton|:id|mediopago": {
+        "70727604-f416-4f63-86b6-e9f9e737063a": "GET|api|Boton|:id|mediopago"
+      },
+      "Boton|:id|productos": {
+        "Boton|:id|productos|rel": {
+          "Boton|:id|productos|rel|:fk": {
+            "api|Boton|:id|productos|rel|:fk": {
+              "f3b05afc-adf7-4a8b-8d55-ada21030a140": "PUT|api|Boton|:id|productos|rel|:fk",
+              "0a56cd0b-6f8c-48b9-95cd-69c466e60938": "DELETE|api|Boton|:id|productos|rel|:fk"
+            }
+          }
+        },
+        "api|Boton|:id|productos": {
+          "503c4441-4ebb-4c01-8e30-09d71e21983c": "GET|api|Boton|:id|productos"
+        }
+      },
+      "api|Boton|:id|marca": {
+        "b33b327c-7d3a-4f58-b05d-4275033be622": "GET|api|Boton|:id|marca"
+      },
+      "api|Boton|:id|ventana_default": {
+        "e58888bd-a991-46bb-88fc-27de76828985": "GET|api|Boton|:id|ventana_default"
+      },
+      "Boton|:id|ventanas_horario": {
+        "Boton|:id|ventanas_horario|rel": {
+          "Boton|:id|ventanas_horario|rel|:fk": {
+            "api|Boton|:id|ventanas_horario|rel|:fk": {
+              "005ef1e5-173c-4b0c-a1d8-0aa2ef65a80d": "PUT|api|Boton|:id|ventanas_horario|rel|:fk",
+              "a13b372d-0578-433f-9526-1e8b488b9427": "DELETE|api|Boton|:id|ventanas_horario|rel|:fk"
+            }
+          }
+        },
+        "api|Boton|:id|ventanas_horario": {
+          "1f8987e8-9d75-4669-a3ff-e6b6059511a8": "GET|api|Boton|:id|ventanas_horario"
+        }
+      },
+      "Boton|:id|pedidos": {
+        "api|Boton|:id|pedidos": {
+          "2947f0ec-aba7-4e64-9230-43ecf0562e27": "GET|api|Boton|:id|pedidos",
+          "73a73f33-fce2-4d5d-866b-9f0f3678a630": "POST|api|Boton|:id|pedidos"
+        }
+      },
+      "api|Boton|:id|relatedProducts": {
+        "7e114763-c8d2-4cd9-aaac-cb46a6713a84": "GET|api|Boton|:id|relatedProducts"
+      },
+      "api|Boton|:id|resumen": {
+        "b8c3639c-858d-48e9-9757-84c4e2d70839": "GET|api|Boton|:id|resumen"
+      },
+      "api|Boton|:id|producto_marca": {
+        "2433a8b1-9000-4ceb-9775-cd1b5133a98f": "GET|api|Boton|:id|producto_marca"
+      },
+      "api|Boton|:id": {
+        "6d96efea-46b5-40a2-a7a5-8978fc144e05": "GET|api|Boton|:id",
+        "cf339ccf-ab57-4b3f-a6c5-9c26bb9aedcc": "PATCH|api|Boton|:id"
+      }
+    },
+    "api|Boton|claim": {
+      "1aeff9e1-9d54-4e6b-b9a8-99c8d821daf9": "POST|api|Boton|claim"
+    },
+    "api|Boton": {
+      "6904eb25-990e-48db-95ab-5d66b1c57a59": "GET|api|Boton"
+    }
+  },
+  "Cliente": {
+    "Cliente|:id": {
+      "Cliente|:id|botones": {
+        "Cliente|:id|botones|:fk": {
+          "api|Cliente|:id|botones|:fk": {
+            "3f26a232-b9a6-4efe-a680-706d208c089c": "GET|api|Cliente|:id|botones|:fk",
+            "bc8cc50d-2670-4b92-82b8-bef1b9f2d574": "PUT|api|Cliente|:id|botones|:fk"
+          }
+        },
+        "api|Cliente|:id|botones": {
+          "a1c88e05-2fbf-4fa1-bda7-2b256c208ff6": "GET|api|Cliente|:id|botones"
+        }
+      },
+      "Cliente|:id|notification_token": {
+        "Cliente|:id|notification_token|:fk": {
+          "api|Cliente|:id|notification_token|:fk": {
+            "90a5870d-143e-4707-8a67-69c0fc45ce23": "GET|api|Cliente|:id|notification_token|:fk",
+            "163316c4-022f-4802-ad17-3a9e262088c8": "DELETE|api|Cliente|:id|notification_token|:fk"
+          }
+        },
+        "api|Cliente|:id|notification_token|sendToTopic": {
+          "3d7d78ff-b0a3-431f-93a0-4405b6c86554": "POST|api|Cliente|:id|notification_token|sendToTopic"
+        },
+        "api|Cliente|:id|notification_token|sendToDeviceGroup": {
+          "fe6c2d94-9a84-459b-9e99-f29d42d6d8d7": "POST|api|Cliente|:id|notification_token|sendToDeviceGroup"
+        },
+        "api|Cliente|:id|notification_token|sendToDevice": {
+          "dd018347-bf44-4ba9-a367-5adaf547efe8": "POST|api|Cliente|:id|notification_token|sendToDevice"
+        },
+        "api|Cliente|:id|notification_token": {
+          "68492307-9ca7-4b7a-a484-3502d8c2d612": "GET|api|Cliente|:id|notification_token",
+          "63051b1c-2061-4045-8968-dad0be711ad7": "POST|api|Cliente|:id|notification_token"
+        }
+      },
+      "Cliente|:id|direcciones": {
+        "Cliente|:id|direcciones|:fk": {
+          "api|Cliente|:id|direcciones|:fk": {
+            "8348ab2f-edc3-41d6-9696-fe9cb4acf830": "GET|api|Cliente|:id|direcciones|:fk",
+            "002927c1-efa6-4624-9a6f-8797de6107c8": "DELETE|api|Cliente|:id|direcciones|:fk",
+            "f2a87fb3-df8d-47ec-8bfd-2b2e5467b348": "PUT|api|Cliente|:id|direcciones|:fk"
+          }
+        },
+        "api|Cliente|:id|direcciones": {
+          "abbf0bcb-4210-4caa-945f-85e64eb47211": "GET|api|Cliente|:id|direcciones",
+          "1d1bc2ae-b02a-41f9-b3d8-905a772f7f7b": "POST|api|Cliente|:id|direcciones"
+        }
+      },
+      "api|Cliente|:id|direccion_default": {
+        "53213891-52b7-450d-9bd7-9cb84579fd3b": "GET|api|Cliente|:id|direccion_default"
+      },
+      "Cliente|:id|mediospago": {
+        "Cliente|:id|mediospago|:fk": {
+          "api|Cliente|:id|mediospago|:fk": {
+            "df9e5835-5342-47e6-adb2-1f260380fe5c": "GET|api|Cliente|:id|mediospago|:fk",
+            "364d2eb7-91d8-48de-8683-f2772f6c2394": "DELETE|api|Cliente|:id|mediospago|:fk"
+          }
+        },
+        "api|Cliente|:id|mediospago": {
+          "1a0ad215-4dab-47fe-a205-504c2da12871": "GET|api|Cliente|:id|mediospago",
+          "9e722b4f-fd2f-474d-9fa5-6a1bf6a0ceb7": "POST|api|Cliente|:id|mediospago"
+        }
+      },
+      "api|Cliente|:id|mediopago_default": {
+        "7ba2467e-89a5-4d40-a7d0-db717022b195": "GET|api|Cliente|:id|mediopago_default"
+      },
+      "Cliente|:id|pedidos": {
+        "Cliente|:id|pedidos|:fk": {
+          "api|Cliente|:id|pedidos|:fk": {
+            "0686c317-250d-41e7-823b-f3d19f4fc1e6": "GET|api|Cliente|:id|pedidos|:fk",
+            "b8950333-ef71-4de3-abb2-aa1fddb3ee43": "DELETE|api|Cliente|:id|pedidos|:fk"
+          }
+        },
+        "api|Cliente|:id|pedidos": {
+          "43a57c5c-9e81-4cfa-b115-cb6174ec38ce": "GET|api|Cliente|:id|pedidos",
+          "ab9002ad-ab60-4cc0-b06b-e01e712b557f": "POST|api|Cliente|:id|pedidos"
+        }
+      },
+      "Cliente|:id|transacciones_webpay": {
+        "api|Cliente|:id|transacciones_webpay|:fk": {
+          "4935834a-bdc0-4cd0-a91e-ad49e11bc204": "GET|api|Cliente|:id|transacciones_webpay|:fk"
+        },
+        "api|Cliente|:id|transacciones_webpay": {
+          "0b331bce-d77f-4c82-a03b-92b97d317c19": "GET|api|Cliente|:id|transacciones_webpay"
+        }
+      },
+      "api|Cliente|:id|verify": {
+        "cdc3ee3b-901f-41d5-a3bd-f6bc5859d04c": "POST|api|Cliente|:id|verify"
+      },
+      "api|Cliente|:id": {
+        "fc109233-9460-4d3b-940f-9ff8f79de60e": "GET|api|Cliente|:id",
+        "e17c7e47-bed6-438c-9455-b9ed368303f7": "PATCH|api|Cliente|:id"
+      }
+    },
+    "api|Cliente|login": {
+      "04a2fd88-340a-4493-b5a3-f535058214de": "POST|api|Cliente|login"
+    },
+    "api|Cliente|logout": {
+      "0013d09b-7a9e-40fd-898f-8f4fcee136ea": "POST|api|Cliente|logout"
+    },
+    "api|Cliente|confirm": {
+      "e4614eff-2932-47e8-8064-6595e1c729de": "GET|api|Cliente|confirm"
+    },
+    "api|Cliente|reset": {
+      "389f0906-242f-4257-82c4-39539f051fae": "POST|api|Cliente|reset"
+    },
+    "api|Cliente|change-password": {
+      "c453fad2-110e-4284-a189-090f30d51124": "POST|api|Cliente|change-password"
+    },
+    "api|Cliente|reset-password": {
+      "36e822d8-7718-4d03-8e88-74ff9d421fbe": "POST|api|Cliente|reset-password"
+    },
+    "Cliente|isButtonClaimed": {
+      "api|Cliente|isButtonClaimed|:idBoton": {
+        "7e7763a6-fa6b-4d7e-88f7-38234d35dcd4": "GET|api|Cliente|isButtonClaimed|:idBoton"
+      }
+    },
+    "Cliente|ventanasDireccion": {
+      "api|Cliente|ventanasDireccion|:idDireccion": {
+        "0e772114-ab40-463d-9972-c219f8dd1a5a": "GET|api|Cliente|ventanasDireccion|:idDireccion"
+      }
+    },
+    "api|Cliente|fbauth": {
+      "8bc36f89-d2e6-42f6-be0f-c269b07959d0": "POST|api|Cliente|fbauth"
+    },
+    "api|Cliente": {
+      "8a9648f2-dbb8-407f-b60c-1a6cbf722465": "POST|api|Cliente",
+      "04c6a736-1271-4e6b-8083-4d72426a0664": "GET|api|Cliente"
+    }
+  },
+  "Pedido": {
+    "Pedido|:id": {
+      "api|Pedido|:id|direccion": {
+        "c0de4401-df6d-437f-8919-0db591c69550": "GET|api|Pedido|:id|direccion"
+      },
+      "api|Pedido|:id|mediopago": {
+        "66c2659f-b5bc-4f0e-8e5c-cdaa37af0f7c": "GET|api|Pedido|:id|mediopago"
+      },
+      "api|Pedido|:id|estado": {
+        "cfe5b9fa-7a6c-4ff2-aff4-9f1320427fff": "GET|api|Pedido|:id|estado"
+      },
+      "api|Pedido|:id|transaccion": {
+        "87a6f083-2115-4c61-b490-8610946ded9a": "GET|api|Pedido|:id|transaccion"
+      },
+      "api|Pedido|:id|historial": {
+        "b3708808-98ec-40b6-b8cb-f2e94b2a15c3": "GET|api|Pedido|:id|historial"
+      },
+      "api|Pedido|:id|resumen": {
+        "ffc3f04f-c23f-4e56-9a68-73cec237ccbf": "GET|api|Pedido|:id|resumen"
+      },
+      "api|Pedido|:id": {
+        "4e99a0f8-a796-4f70-8227-b1d1c0a94ca7": "GET|api|Pedido|:id",
+        "8557d1bb-f5ff-4e2e-8ccc-5fe36cb5e6c0": "PATCH|api|Pedido|:id"
+      }
+    },
+    "Pedido|costo_despacho": {
+      "api|Pedido|costo_despacho|:monto": {
+        "8e41d0d8-21e4-40ac-b62d-8cfcef65ccab": "GET|api|Pedido|costo_despacho|:monto"
+      }
+    },
+    "api|Pedido": {
+      "6294f2f5-cd79-4dda-b3ae-4677a0adbb68": "GET|api|Pedido"
+    }
+  },
+  "Producto": {
+    "Producto|:id": {
+      "api|Producto|:id|categoria": {
+        "b559cdd3-0398-4621-bb18-c78f4a5ec9b6": "GET|api|Producto|:id|categoria"
+      },
+      "api|Producto|:id|marca": {
+        "e88354ae-b661-42f1-9fca-34858827cea0": "GET|api|Producto|:id|marca"
+      },
+      "api|Producto|:id|comunas_restringidas": {
+        "615b9320-5928-4d74-9fee-563989aa683b": "GET|api|Producto|:id|comunas_restringidas"
+      },
+      "api|Producto|:id|image": {
+        "e698eff9-3821-473f-966a-fa43e0e8d3ca": "POST|api|Producto|:id|image"
+      },
+      "api|Producto|:id": {
+        "7845fa98-fbee-4450-924e-78833101c185": "GET|api|Producto|:id"
+      }
+    },
+    "api|Producto|botones": {
+      "c6ef4e0f-1fad-4294-9afe-ccea70b32111": "GET|api|Producto|botones"
+    },
+    "api|Producto|consumibles": {
+      "f7e1c171-c5af-46d0-9693-f0443c73d9f7": "GET|api|Producto|consumibles"
+    },
+    "api|Producto": {
+      "08f7dd12-c827-42a2-aff7-0ae27e648d93": "GET|api|Producto"
+    }
+  },
+  "ProductoCategoria": {
+    "api|ProductoCategoria|botones": {
+      "373d9bf2-0ddd-47d6-962d-d9fdda125d47": "GET|api|ProductoCategoria|botones"
+    },
+    "api|ProductoCategoria|consumibles": {
+      "7e898395-e32d-4b92-a271-dcf7221c3402": "GET|api|ProductoCategoria|consumibles"
+    },
+    "api|ProductoCategoria|:id": {
+      "600da12f-2377-4613-b005-24e3d8db5904": "GET|api|ProductoCategoria|:id"
+    },
+    "api|ProductoCategoria": {
+      "4eaf04d0-589d-447f-a0b7-073c71dfbdb7": "GET|api|ProductoCategoria"
+    }
+  },
+  "Marca": {
+    "Marca|:id": {
+      "api|Marca|:id|botones": {
+        "09e3e276-dc59-43b6-876a-89f19ca08951": "GET|api|Marca|:id|botones"
+      },
+      "api|Marca|:id|botones_disponibles": {
+        "60b45b9b-62ac-44de-afff-c45c2eee4257": "GET|api|Marca|:id|botones_disponibles"
+      },
+      "api|Marca|:id|productos": {
+        "fa84cfe3-9d74-4dd2-885f-a39da3832b49": "GET|api|Marca|:id|productos"
+      },
+      "api|Marca|:id": {
+        "78734bf7-b37a-4b5c-85f0-261312e404e6": "GET|api|Marca|:id"
+      }
+    },
+    "api|Marca": {
+      "96162c83-6cd2-45e4-b538-439733d3eb70": "GET|api|Marca"
+    }
+  },
+  "VentanaHoraria": {
+    "VentanaHoraria|:id": {
+      "api|VentanaHoraria|:id|pedidos": {
+        "20497f88-fd0c-4d7c-8a7b-ea1dbcdd1b4f": "GET|api|VentanaHoraria|:id|pedidos"
+      },
+      "api|VentanaHoraria|:id": {
+        "69dc55e3-3625-4b03-9440-4fa34222e325": "GET|api|VentanaHoraria|:id"
+      }
+    },
+    "api|VentanaHoraria": {
+      "40570058-9db4-4c76-b07a-6bb435b991cc": "GET|api|VentanaHoraria"
+    }
+  }
+}
