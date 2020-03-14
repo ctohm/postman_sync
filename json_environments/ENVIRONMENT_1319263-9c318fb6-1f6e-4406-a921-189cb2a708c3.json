@@ -29,18 +29,18 @@
     },
     {
       "key": "password_pfx",
-      "value": "santi210109",
+      "value": "",
       "enabled": true
     },
     {
       "key": "rut_cedente",
-      "value": "76986660-4",
+      "value": "",
       "enabled": true
     },
     {
       "key": "api_token",
-      "value": "",
-      "enabled": true
+      "value": "PdcicvF4kIm1l2f5xO0guzFlwl78lePKttpt8nROsrtBH9KHroYVMWp5rWbz",
+      "enabled": false
     },
     {
       "key": "sii_token",
@@ -49,7 +49,7 @@
     },
     {
       "key": "certificado_id",
-      "value": "",
+      "value": "3c8411dc-b2ed-3210-bd8a-796373ff1d7d",
       "enabled": true
     },
     {
@@ -59,6 +59,16 @@
     },
     {
       "key": "access_token",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzUxMiJ9.eyJpc3MiOiJodHRwOlwvXC9jZXNpb24ubG9jYWwuZmZmXC9hcGlcL3VzZXJcL2xvZ2luIiwiaWF0IjoxNTgyODE2NTM1LCJleHAiOjE1ODI4MjAxMzUsIm5iZiI6MTU4MjgxNjUzNSwianRpIjoiOTNVUlR4dDZ0VzlBWEI4TyIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSIsImlkIjoxLCJydXQiOm51bGwsInVzZXJuYW1lIjoiIE5cL0EgIiwiY2VydGlmaWNhZG9faWQiOiJsYWxhIiwicnV0X2NlZGVudGUiOiJsb2xvbG8iLCJzaWlfdG9rZW4iOiJhamEifQ.AY8pLQSZkIhzLStIBGMs_d-FCuJaHqtqyFXjj27MjGmDz6eQIG_hV_qYJoM8xJK2wHj_RidgtyfOeZiPGKUQzIVPAAQXl4sg9k6qiLgrpgC9pu2bFaawYE_QhoilAbPcsUaDStMSmdBnlo02u77AC6D0HAdpEAnZPZnJ3Mx22xcbciuo",
+      "enabled": true
+    },
+    {
+      "key": "certificados",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "cert_base64",
       "value": "",
       "enabled": true
     }

@@ -15,12 +15,15 @@
     "generate_openapi:json": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=json specs/swagger/swagger-spec.json > specs/openapi-spec.json",
     "generate_openapi:yaml": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=yaml specs/swagger/swagger-spec.yaml > specs/openapi-spec.yaml",
     "lint": "eslint server",
+    
     "postman": "yarn postman:download && yarn swagger && yarn postman:export",
-    "postman:download": "DEBUG=* node lib/download.js",
-    "postman:export": "DEBUG=pm_sync:* node lib/export_to_postman.js",
-    "postman:inspect": "DEBUG=pm_sync:* node lib/inspect.js",
-    "postman:inspect_upload": "yarn postman:inspect && yarn postman:justupload",
-    "postman:upload": "DEBUG=* node lib/upload.js",
+    
+    "postman:download": "DEBUG=* node index.js --download",
+    "postman:export": "DEBUG=pm_sync:* node index.js --export",
+    "postman:inspect": "DEBUG=pm_sync:* node index.js --inspect",
+    "postman:upload": "DEBUG=* node index.js --upload",
+
+    "postman:inspect_upload": "yarn postman:inspect && yarn postman:upload",
     "reduce": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/postman-reduce.js",
     "swagger": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/normalize_swagger.js && yarn generate_openapi"
   },
@@ -29,6 +32,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "minimist": "^1.2.5",
     "prettier": "^1.19.1"
   },
   "dependencies": {

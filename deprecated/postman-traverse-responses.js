@@ -1,63 +1,62 @@
 #!/usr/bin/env node
+async function inspectCollections(Config) {
+  const Promise = require('bluebird'),
+    fs = Promise.promisifyAll(require('fs')),
+    path = require('path'),
+    _ = require('lodash'),
+    chalk = require('chalk'),
+    specPaths = require(`${Config.UTILS_FOLDER}/get_spec_paths.js`),
+    this_script = path.basename(__filename, path.extname(__filename)),
+    debug = require('debug')(`postman_synchronizer:${this_script}`),
+    Converter = require('swagger2-postman2-parser'),
+    {
+      indentationReplacer,
+      writeJsonIndentation
+    } = require(`${Config.UTILS_FOLDER}/write-json-indentation.js`)(Config),
+    entityUtils = require(`${Config.UTILS_FOLDER}/entity-utils.js`),
+    normalizeCollectionIds = require(`${Config.UTILS_FOLDER}/normalize_collection_ids.js`),
+    Request = require('postman-collection').Request,
+    Response = require('postman-collection').Response,
+    Header = require('postman-collection').Header,
+    HeaderList = require('postman-collection').HeaderList,
+    PropertyList = require('postman-collection').PropertyList,
+    Variable = require('postman-collection').Variable,
+    VariableList = require('postman-collection').VariableList,
+    Version = require('postman-collection').Version,
+    Collection = require('postman-collection').Collection,
+    Item = require('postman-collection').Item,
+    ItemGroup = require('postman-collection').ItemGroup;
 
-const Promise = require('bluebird'),
-  fs = Promise.promisifyAll(require('fs')),
-  path = require('path'),
-  _ = require('lodash'),
-  chalk = require('chalk'),
-  specPaths = require(`${process.env.UTILS_FOLDER}/get_spec_paths.js`),
-  Config = require(`${process.env.LIB_FOLDER}/config.js`),
-  this_script = path.basename(__filename, path.extname(__filename)),
-  debug = require('debug')(`${Config.DEBUG_PREFIX}:docs:${this_script}`),
-  Converter = require('swagger2-postman2-parser'),
-  {
-    indentationReplacer,
-    writeJsonIndentation
-  } = require(`${process.env.UTILS_FOLDER}/write-json-indentation.js`),
-  entityUtils = require(`${process.env.UTILS_FOLDER}/entity-utils.js`),
-  normalizeCollectionIds = require(`${process.env.UTILS_FOLDER}/normalize_collection_ids.js`),
-  Request = require('postman-collection').Request,
-  Response = require('postman-collection').Response,
-  Header = require('postman-collection').Header,
-  HeaderList = require('postman-collection').HeaderList,
-  PropertyList = require('postman-collection').PropertyList,
-  Variable = require('postman-collection').Variable,
-  VariableList = require('postman-collection').VariableList,
-  Version = require('postman-collection').Version,
-  Collection = require('postman-collection').Collection,
-  Item = require('postman-collection').Item,
-  ItemGroup = require('postman-collection').ItemGroup;
+  const /* Swagger Paths */
+    {
+      swaggerAncestorPath,
+      swaggerIndentedSpec,
+      swaggerRawConvertedPath,
+      swaggerSpecPath,
+      swaggerConvertedPath,
+      swaggerReducedPath,
+      swaggerAssimilatedPath
+    } = specPaths,
+    /* Postman Paths */
+    {
+      postmanAssimilatedPath,
+      postmanAncestorPath,
+      postmanIndentedSpec,
+      postmanSpecPath,
+      postmanConvertedPath,
+      postmanReducedPath
+    } = specPaths,
+    {
+      getTypes,
+      getMethodPath,
+      debugWithParent,
+      getNameAndId,
+      listEach,
+      mapChildren
+    } = require(`${Config.UTILS_FOLDER}/postman_collection_common_fn.js`)(
+      Config
+    );
 
-const /* Swagger Paths */
-  {
-    swaggerAncestorPath,
-    swaggerIndentedSpec,
-    swaggerRawConvertedPath,
-    swaggerSpecPath,
-    swaggerConvertedPath,
-    swaggerReducedPath,
-    swaggerAssimilatedPath
-  } = specPaths,
-  /* Postman Paths */
-  {
-    postmanAssimilatedPath,
-    postmanAncestorPath,
-    postmanIndentedSpec,
-    postmanSpecPath,
-    postmanConvertedPath,
-    postmanReducedPath
-  } = specPaths,
-  {
-    something,
-    getTypes,
-    getMethodPath,
-    debugWithParent,
-    getNameAndId,
-    listEach,
-    mapChildren
-  } = require(`${process.env.UTILS_FOLDER}/postman_collection_common_fn.js`);
-
-async function inspectCollections() {
   let postmanSpec = require(postmanSpecPath);
   if (postmanSpec.collection) {
     postmanSpec = postmanSpec.collection;

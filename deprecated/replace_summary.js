@@ -1,37 +1,36 @@
-const path = require('path'),
-  specPaths = require(`${process.env.UTILS_FOLDER}/get_spec_paths.js`),
-  Config = require(`${process.env.LIB_FOLDER}/config.js`),
-  this_script = path.basename(__filename, path.extname(__filename)),
-  debug = require('debug')(`${Config.DEBUG_PREFIX}:docs:${this_script}`),
-  chalk = require('chalk'),
-  entityUtils = require(`${process.env.UTILS_FOLDER}/entity-utils.js`);
+function replaceSummary(Config, summary, endpoint, verbose) {
+  const path = require('path'),
+    specPaths = require(`${Config.UTILS_FOLDER}/get_spec_paths.js`),
+    this_script = path.basename(__filename, path.extname(__filename)),
+    debug = require('debug')(`postman_synchronizer:${this_script}`),
+    chalk = require('chalk'),
+    entityUtils = require(`${Config.UTILS_FOLDER}/entity-utils.js`);
 
-function clienteReplacements(replaced, entity) {
-  return replaced
-    .replace(
-      'Login a user with username/email and password',
-      `${entity} Inicia sesión usando email y password`
-    )
-    .replace(
-      'Logout a user with access token',
-      `${entity} Cierra sesión. Requiere AccessToken`
-    )
-    .replace(
-      "Reset user's password via a password-reset token",
-      `${entity} Restablece password de un usuario mediante correoy link único`
-    )
-    .replace(
-      "Trigger user's identity verification with configured verifyOptions",
-      'Gatilla la verificación de la cuenta de usuario'
-    )
-    .replace("Change a user's password", 'Cambia el password de un usuario')
-    .replace(
-      'Confirm a user registration with identity verification token',
-      `${entity} Confirma registro siguiendo un link`
-    );
-}
+  function clienteReplacements(replaced, entity) {
+    return replaced
+      .replace(
+        'Login a user with username/email and password',
+        `${entity} Inicia sesión usando email y password`
+      )
+      .replace(
+        'Logout a user with access token',
+        `${entity} Cierra sesión. Requiere AccessToken`
+      )
+      .replace(
+        "Reset user's password via a password-reset token",
+        `${entity} Restablece password de un usuario mediante correoy link único`
+      )
+      .replace(
+        "Trigger user's identity verification with configured verifyOptions",
+        'Gatilla la verificación de la cuenta de usuario'
+      )
+      .replace("Change a user's password", 'Cambia el password de un usuario')
+      .replace(
+        'Confirm a user registration with identity verification token',
+        `${entity} Confirma registro siguiendo un link`
+      );
+  }
 
-function replaceSummary(summary, endpoint, verbose) {
   let original = '' + summary;
 
   var endpointArr = endpoint.split('/'),
