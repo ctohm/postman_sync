@@ -1,0 +1,1427 @@
+{
+  "id": "6b984c69-7615-4a0d-9934-d99d6575ecea",
+  "name": "mydot_api_tests",
+  "values": [
+    {
+      "key": "idCliente",
+      "value": 1,
+      "enabled": true
+    },
+    {
+      "key": "accessToken",
+      "value": "eFeFsDHhS2Xx1NedIbsw6tiUt1YYELMwdFFwER16JM0uo9cVVS1WtxGBa4K2j2n4",
+      "enabled": true
+    },
+    {
+      "key": "where",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "idBoton",
+      "value": "70F11C087765",
+      "enabled": true
+    },
+    {
+      "key": "emailCliente1",
+      "value": "amenadiel+cliente@gmail.com",
+      "enabled": true
+    },
+    {
+      "key": "passwordCliente1",
+      "value": "Mydot.,219",
+      "enabled": true
+    },
+    {
+      "key": "emailCliente8",
+      "value": "fff@ffflabs.com",
+      "enabled": true
+    },
+    {
+      "key": "passwordCliente8",
+      "value": "1234",
+      "enabled": true
+    },
+    {
+      "key": "idVentana",
+      "value": "15",
+      "enabled": true
+    },
+    {
+      "key": "idProducto",
+      "value": 816,
+      "enabled": true
+    },
+    {
+      "key": "idMarca",
+      "value": 10,
+      "enabled": true
+    },
+    {
+      "key": "idCategoria",
+      "value": 5,
+      "enabled": true
+    },
+    {
+      "key": "idVentanasHorario",
+      "value": "15",
+      "enabled": true
+    },
+    {
+      "key": "idPedido",
+      "value": 835,
+      "enabled": true
+    },
+    {
+      "key": "bearerToken",
+      "value": "ZUZlRnNESGhTMlh4MU5lZElic3c2dGlVdDFZWUVMTXdkRkZ3RVIxNkpNMHVvOWNWVlMxV3R4R0JhNEsyajJuNA==",
+      "enabled": true
+    },
+    {
+      "key": "idProductoTipoBoton",
+      "value": 47,
+      "enabled": true
+    },
+    {
+      "key": "notificationToken",
+      "value": "diil8W1jwIQ:APA91bGUOHahA97tOVqenF3LQE8oNQshFSwYPFOO-me1LKnVAVOYPzE8yUudsQ7Bvt2RjEIYxXQKLtu5Fin-4s_f_MylCz6rFwJUxJHl_xckTP69aIuv7Tj6w_eRtGSWU20oslDhIeIL",
+      "enabled": true
+    },
+    {
+      "key": "FCM_SERVER_KEY",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "IID_TOKEN",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "FIREBASE_API_KEY",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "facebookToken",
+      "value": "EAAGTvGxGuNUBAJIoqRfjiIXsWhnpKeyKQQntZBRRqZBcCjhyh0qlbvu8t0MnAufrhRd3nOSclHuofjMkKC2N2DZBsA7IpAzR3Um7PzNeP8CEFgsvSZB02z9vCROON88guyUm2r4l1KYDqrNeoFr1KtqMO8GqYraZB7KHb6JblDEBGL539TrDMT67Evw3c6lgSby9tLqEnCgZDZD",
+      "enabled": true
+    },
+    {
+      "key": "slack_channel_ffigueroa",
+      "value": "DL58MR8SH",
+      "enabled": true
+    },
+    {
+      "key": "slack_channel_notifications",
+      "value": "CLY495AJK",
+      "enabled": true
+    },
+    {
+      "key": "redirect",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "verificationToken",
+      "value": "334903d0428026a0a3bf14a825a4c95f1ebe9fc44bc55d2dc94fb32d1892de50e70c8e8c68448ae2b90712df8988d60867a1b9ee0f96dc53e6d9279dde1bc2dc",
+      "enabled": true
+    },
+    {
+      "key": "resetLink",
+      "value": "https://apilocal.mydot.app/reset_password/1?access_token=2c3IQIhwSMx7nxCZhG5oD3IywmADvOkdufVgLJbIqg0MxPb4EuCK0iaIEd0thdnh",
+      "enabled": true
+    },
+    {
+      "key": "authorizationToken",
+      "value": "2c3IQIhwSMx7nxCZhG5oD3IywmADvOkdufVgLJbIqg0MxPb4EuCK0iaIEd0thdnh",
+      "enabled": true
+    },
+    {
+      "key": "TBK_TOKEN",
+      "value": "e8a412874d5d72d5c8b9a943c9e4a80862769783a72abafe3827ffd424bfa74b",
+      "enabled": true
+    },
+    {
+      "key": "urlWebpay",
+      "value": "https://webpay3gint.transbank.cl/webpayserver/bp_inscription.cgi",
+      "enabled": true
+    },
+    {
+      "key": "idTransaccion",
+      "value": 821,
+      "enabled": true
+    },
+    {
+      "key": "FCM_SENDER_ID",
+      "value": "1007045612023",
+      "enabled": true
+    },
+    {
+      "key": "mainProduct70F11C0876FA",
+      "value": 190,
+      "enabled": true
+    },
+    {
+      "key": "idProducto1",
+      "value": 248,
+      "enabled": true
+    },
+    {
+      "key": "productosBoton70F11C0876FA",
+      "value": [
+        190,
+        191,
+        222
+      ],
+      "enabled": true
+    },
+    {
+      "key": "idProducto2",
+      "value": 745,
+      "enabled": true
+    },
+    {
+      "key": "idBotonDisponible",
+      "value": "70F11C82E25F",
+      "enabled": true
+    },
+    {
+      "key": "notificationPlatform",
+      "value": "BROWSER",
+      "enabled": true
+    },
+    {
+      "key": "direcciones",
+      "value": [
+        523,
+        516,
+        522,
+        512,
+        524,
+        488,
+        526,
+        518,
+        520,
+        500,
+        527
+      ],
+      "enabled": true
+    },
+    {
+      "key": "mediosPagoActivos",
+      "value": [
+        153,
+        155,
+        154
+      ],
+      "enabled": true
+    },
+    {
+      "key": "mediosPagoInActivos",
+      "value": [
+        146,
+        142,
+        160,
+        161,
+        138,
+        157,
+        156,
+        162,
+        141,
+        118,
+        90,
+        150,
+        143,
+        137,
+        140,
+        159,
+        144,
+        145,
+        139
+      ],
+      "enabled": true
+    },
+    {
+      "key": "testStarted",
+      "value": 1,
+      "enabled": true
+    },
+    {
+      "key": "lastTestRun",
+      "value": 1575393924593,
+      "enabled": true
+    },
+    {
+      "key": "mainProduct70F11C087765",
+      "value": 241,
+      "enabled": true
+    },
+    {
+      "key": "productosBoton70F11C087765",
+      "value": [
+        241,
+        248,
+        745,
+        746,
+        747,
+        748,
+        815,
+        816
+      ],
+      "enabled": true
+    },
+    {
+      "key": "productosAgregables",
+      "value": [
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        745,
+        746,
+        747,
+        748,
+        815,
+        816
+      ],
+      "enabled": true
+    },
+    {
+      "key": "botones",
+      "value": [
+        "70F11C087765"
+      ],
+      "enabled": true
+    },
+    {
+      "key": "transaccionFilter",
+      "value": "{\"include\":[\"transaccion\"]}",
+      "enabled": true
+    },
+    {
+      "key": "idPedidoFinalizado",
+      "value": 812,
+      "enabled": true
+    },
+    {
+      "key": "cantidadProductos",
+      "value": 8,
+      "enabled": true
+    },
+    {
+      "key": "categorias",
+      "value": [
+        {
+          "descripcion": "Bebé",
+          "id": 1
+        },
+        {
+          "descripcion": "Limpieza",
+          "id": 2
+        },
+        {
+          "descripcion": "Cuidado personal",
+          "id": 4
+        },
+        {
+          "descripcion": "Bebidas",
+          "id": 5
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "key": "ProductoTipoBoton",
+      "value": null,
+      "enabled": true
+    },
+    {
+      "key": "productoBoton",
+      "value": {
+        "descripcion": "Dot Coca Cola",
+        "descuento": 0,
+        "id": 439,
+        "idCategoria": 5,
+        "idMarca": 22,
+        "image": "https://static.mydot.app/cocacola.png",
+        "nombre_categoria": "Bebidas",
+        "precioBase": 5000,
+        "sku": "COCACOLA0000"
+      },
+      "enabled": true
+    },
+    {
+      "key": "boton_Wrongid",
+      "value": "70F11C82E13C",
+      "enabled": true
+    },
+    {
+      "key": "tokenCliente",
+      "value": "eFeFsDHhS2Xx1NedIbsw6tiUt1YYELMwdFFwER16JM0uo9cVVS1WtxGBa4K2j2n4",
+      "enabled": true
+    },
+    {
+      "key": "clientesEjemplo",
+      "value": {
+        "1": {
+          "email": "amenadiel+cliente@gmail.com",
+          "id": 1,
+          "idCliente": 1
+        },
+        "8": {
+          "email": "fff@ffflabs.com",
+          "id": 8,
+          "idCliente": 8
+        }
+      },
+      "enabled": true
+    },
+    {
+      "key": "clientesObject",
+      "value": {
+        "1": {
+          "email": "amenadiel+cliente@gmail.com",
+          "id": 1,
+          "idCliente": 1
+        },
+        "8": {
+          "email": "fff@ffflabs.com",
+          "id": 8,
+          "idCliente": 8
+        }
+      },
+      "enabled": true
+    },
+    {
+      "key": "currentUser",
+      "value": {
+        "email": "amenadiel+cliente@gmail.com",
+        "id": 1,
+        "idCliente": 1
+      },
+      "enabled": true
+    },
+    {
+      "key": "currentUserMail",
+      "value": "amenadiel+cliente@gmail.com",
+      "enabled": true
+    },
+    {
+      "key": "currentUsermail",
+      "value": "amenadiel+cliente@gmail.com",
+      "enabled": true
+    },
+    {
+      "key": "idPedidoVigenteFechaAnterior",
+      "value": 818,
+      "enabled": true
+    },
+    {
+      "key": "productosBotonMD0100000001",
+      "value": [],
+      "enabled": true
+    },
+    {
+      "key": "idMediopagoEliminar",
+      "value": 139,
+      "enabled": true
+    },
+    {
+      "key": "definition.Cliente",
+      "value": {
+        "additionalProperties": true,
+        "description": "Usuarios finales del servicio myDot. Tienen la App instalada en su dispositivo",
+        "properties": {
+          "apellido": {
+            "maxLength": 128,
+            "type": "string"
+          },
+          "avatar": {
+            "default": "https://static.mydot.app/avatar.png",
+            "maxLength": 512,
+            "type": "string"
+          },
+          "despachoGratis": {
+            "default": 1,
+            "format": "integer",
+            "maxLength": 1,
+            "type": "number"
+          },
+          "email": {
+            "format": "email",
+            "maxLength": 36,
+            "type": "string"
+          },
+          "id": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "id_direccion_default": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "id_mediopago_default": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "rut": {
+            "maxLength": 12,
+            "type": "string"
+          },
+          "telefono": {
+            "maxLength": 15,
+            "type": "string"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "username": {
+            "maxLength": 128,
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ],
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "idProducto7",
+      "value": 816,
+      "enabled": true
+    },
+    {
+      "key": "idDireccionPorDefecto",
+      "value": 500,
+      "enabled": true
+    },
+    {
+      "key": "direccionesBorrables",
+      "value": [
+        523,
+        527,
+        512,
+        516,
+        518,
+        488,
+        520,
+        526,
+        524
+      ],
+      "enabled": true
+    },
+    {
+      "key": "idMediopagoDefault",
+      "value": 153,
+      "enabled": true
+    },
+    {
+      "key": "direccionesNoBorrables",
+      "value": [
+        500,
+        522
+      ],
+      "enabled": true
+    },
+    {
+      "key": "idDireccionEliminar",
+      "value": 516,
+      "enabled": true
+    },
+    {
+      "key": "definition.Boton",
+      "value": {
+        "additionalProperties": true,
+        "description": "Los botones de un Cliente",
+        "properties": {
+          "comment": {
+            "description": "Comentario arbitrario en esta entidad",
+            "maxLength": 512,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "id": {
+            "maxLength": 12,
+            "type": "string"
+          },
+          "idCliente": {
+            "description": "ID del cliente que compró este dot",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "idDireccion": {
+            "description": "Dirección de despacho asociada a este botón",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "idMarca": {
+            "description": "Marca que limita los productos de este botón",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "idMediopago": {
+            "description": "Medio de pago asociado a este botón",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "isActive": {
+            "default": true,
+            "type": "boolean"
+          },
+          "nombreMarca": {
+            "description": "Marca del botón",
+            "maxLength": 64,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "saldo": {
+            "default": 5000,
+            "description": "Saldo a favor cargado en el botón",
+            "format": "integer",
+            "maxLength": 5,
+            "maximum": 99999,
+            "minimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ssid": {
+            "description": "SSID de la wifi asociada al botón",
+            "maxLength": 128,
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "idCliente"
+        ],
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "definition.Direccion",
+      "value": {
+        "additionalProperties": true,
+        "description": "Las direcciones de un Cliente",
+        "properties": {
+          "comuna": {
+            "maxLength": 64,
+            "type": "string"
+          },
+          "conCobertura": {
+            "default": false,
+            "type": "boolean"
+          },
+          "direccion": {
+            "maxLength": 65535,
+            "type": "string"
+          },
+          "geom": {
+            "properties": {
+              "lat": {
+                "type": "number"
+              },
+              "lng": {
+                "type": "number"
+              }
+            },
+            "type": "object"
+          },
+          "id": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idCliente": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "instrucciones": {
+            "description": "Indicaciones para llegar, despachar, etc a esta dirección",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lat": {
+            "default": -70.38,
+            "format": "float",
+            "maxLength": 7,
+            "maximum": 80,
+            "minimum": -80,
+            "type": "number"
+          },
+          "link": {
+            "type": "string"
+          },
+          "lng": {
+            "default": -30.78,
+            "format": "float",
+            "maxLength": 7,
+            "maximum": 80,
+            "minimum": -80,
+            "type": "number"
+          },
+          "numero": {
+            "description": "Si aplica, el depto, oficina, letra o numeración interior",
+            "maxLength": 512,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pais": {
+            "maxLength": 64,
+            "type": "string"
+          },
+          "region": {
+            "maxLength": 128,
+            "type": "string"
+          }
+        },
+        "required": [
+          "direccion",
+          "lng",
+          "lat"
+        ],
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "definition.Marca",
+      "value": {
+        "additionalProperties": true,
+        "description": "Marcas de producto (pueden ser de un mismo fabricante)",
+        "properties": {
+          "categoriaPrincipal": {
+            "maxLength": 64,
+            "type": "string"
+          },
+          "id": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idFabricante": {
+            "format": "integer",
+            "type": "number"
+          },
+          "image": {
+            "maxLength": 512,
+            "type": "string"
+          },
+          "nombreMarca": {
+            "maxLength": 65535,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "nombreMarca",
+          "idFabricante"
+        ],
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "definition.MedioPago",
+      "value": {
+        "additionalProperties": true,
+        "description": "Los medios de pago de un Cliente",
+        "properties": {
+          "creditCardType": {
+            "default": "Visa",
+            "type": "string"
+          },
+          "id": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idCliente": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idEstado": {
+            "default": 1,
+            "format": "integer",
+            "maxLength": 2,
+            "type": "number"
+          },
+          "last4CardDigits": {
+            "maxLength": 4,
+            "type": "string"
+          },
+          "nombreEstado": {
+            "type": "string"
+          },
+          "numero": {
+            "maxLength": 20,
+            "type": "string"
+          },
+          "ordenCompra": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "responseCode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "responseMessage": {
+            "maxLength": 65535,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "username": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "definition.NotificationToken",
+      "value": {
+        "additionalProperties": false,
+        "properties": {
+          "access_token": {
+            "type": "string"
+          },
+          "config_props": {
+            "type": "object"
+          },
+          "createdAt": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "deviceId": {
+            "type": "string"
+          },
+          "idCliente": {
+            "format": "double",
+            "type": "number"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "required": [
+          "deviceId"
+        ],
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "definition.Pedido",
+      "value": {
+        "additionalProperties": true,
+        "description": "Pedido generado por Botón o App. Sólo visible para Cliente dueño y Operadores",
+        "properties": {
+          "costoDespacho": {
+            "default": 0,
+            "description": "Costo del despacho, a priori cero para pedidos cuyo neto es mayor a 10.000",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 250000,
+            "minimum": 0,
+            "type": "number"
+          },
+          "createdAt": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "descuento": {
+            "default": 0,
+            "description": "Descuento aplicado por promociones o saldo a favor en el Botón",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 250000,
+            "minimum": 0,
+            "type": "number"
+          },
+          "descuento_primer_pedido": {
+            "default": 0,
+            "description": "Descuento aplicado sobre el despacho en el primer pedido del cliente",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 250000,
+            "minimum": 0,
+            "type": "number"
+          },
+          "id": {
+            "format": "integer",
+            "maxLength": 5,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idBoton": {
+            "maxLength": 12,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "idCliente": {
+            "description": "ID del cliente que gatilla el pedido (se lee del token)",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idDireccion": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idEstado": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 9,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idMarca": {
+            "description": "Marca que limita los productos de este botón",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "idMediopago": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idProducto": {
+            "format": "integer",
+            "maxLength": 5,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "idTransaccion": {
+            "format": "integer",
+            "maxLength": 16,
+            "maximum": 8565073562300389,
+            "minimum": 1565000000000001,
+            "type": "number"
+          },
+          "nombreMarca": {
+            "description": "Marca del los productos del pedido",
+            "maxLength": 64,
+            "type": "string"
+          },
+          "precioNeto": {
+            "description": "Precio neto, igual a la suma de los productos que componen el pedido",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 250000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "precioTotal": {
+            "description": "Precio a pagar por el pedido = (precio neto + costo despacho - descuento)",
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 250000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "definition.Producto",
+      "value": {
+        "additionalProperties": true,
+        "description": "Los productos disponibles para comprar",
+        "properties": {
+          "descripcion": {
+            "maxLength": 65535,
+            "type": "string"
+          },
+          "descuento": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 0,
+            "type": "number"
+          },
+          "id": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idCategoria": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "idMarca": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 10000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "image": {
+            "format": "uri",
+            "maxLength": 512,
+            "type": "string"
+          },
+          "isButton": {
+            "description": "Define si el producto es un botón o un consumible",
+            "type": "boolean"
+          },
+          "nombreMarca": {
+            "description": "Marca del producto",
+            "maxLength": 64,
+            "type": "string"
+          },
+          "nombre_categoria": {
+            "maxLength": 64,
+            "type": "string"
+          },
+          "precioBase": {
+            "format": "integer",
+            "maxLength": 7,
+            "maximum": 40000,
+            "minimum": 1,
+            "type": "number"
+          },
+          "sku": {
+            "format": "[A-Z]{5,8}00\\w{2}",
+            "maxLength": 24,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "descripcion",
+          "idCategoria",
+          "idMarca",
+          "precioBase",
+          "descuento"
+        ],
+        "type": "object"
+      },
+      "enabled": true
+    },
+    {
+      "key": "idMediopago",
+      "value": 154,
+      "enabled": true
+    },
+    {
+      "key": "mediosPagoInactivos",
+      "value": [
+        161,
+        118,
+        137,
+        159,
+        144,
+        138,
+        139,
+        156,
+        146,
+        141,
+        90,
+        142,
+        160,
+        150,
+        145,
+        143,
+        140,
+        162,
+        157
+      ],
+      "enabled": true
+    },
+    {
+      "key": "idDireccion",
+      "value": 522,
+      "enabled": true
+    },
+    {
+      "key": "direccionObj",
+      "value": {
+        "Borrables": [
+          518,
+          516,
+          500,
+          529,
+          523
+        ],
+        "NoBorrables": [
+          530,
+          528
+        ],
+        "direcciones": [
+          529,
+          518,
+          528,
+          516,
+          500,
+          530,
+          523
+        ],
+        "id": 528,
+        "idEliminar": 488,
+        "idPorDefecto": 530
+      },
+      "enabled": true
+    },
+    {
+      "key": "mediosPago",
+      "value": [
+        {
+          "botones": [],
+          "id": 90,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 118,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 137,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 138,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 139,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 140,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 141,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 142,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 143,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 144,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 145,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 146,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 150,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [
+            {
+              "id": "MD0100000001",
+              "idDireccion": null,
+              "idMediopago": 153
+            },
+            {
+              "id": "MD0300000001",
+              "idDireccion": null,
+              "idMediopago": 153
+            }
+          ],
+          "id": 153,
+          "idCliente": 1,
+          "idEstado": 1
+        },
+        {
+          "botones": [],
+          "id": 154,
+          "idCliente": 1,
+          "idEstado": 1
+        },
+        {
+          "botones": [
+            {
+              "id": "70F11C0876FA",
+              "idDireccion": null,
+              "idMediopago": 155
+            },
+            {
+              "id": "70F11C087765",
+              "idDireccion": 523,
+              "idMediopago": 155
+            }
+          ],
+          "id": 155,
+          "idCliente": 1,
+          "idEstado": 1
+        },
+        {
+          "botones": [],
+          "id": 156,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 157,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 159,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 160,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 161,
+          "idCliente": 1,
+          "idEstado": 3
+        },
+        {
+          "botones": [],
+          "id": 162,
+          "idCliente": 1,
+          "idEstado": 3
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "key": "filter",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "direccionObj.Borrables",
+      "value": [
+        518,
+        516,
+        500,
+        488,
+        529,
+        523
+      ],
+      "enabled": true
+    },
+    {
+      "key": "direccionObj.NoBorrables",
+      "value": [
+        530,
+        528
+      ],
+      "enabled": true
+    },
+    {
+      "key": "direccionObj.direcciones",
+      "value": [
+        529,
+        518,
+        528,
+        516,
+        500,
+        530,
+        488,
+        523
+      ],
+      "enabled": true
+    },
+    {
+      "key": "direccionObj.id",
+      "value": 528,
+      "enabled": true
+    },
+    {
+      "key": "direccionObj.idEliminar",
+      "value": 523,
+      "enabled": true
+    },
+    {
+      "key": "direccionObj.idPorDefecto",
+      "value": 530,
+      "enabled": true
+    },
+    {
+      "key": "botonesHabilitados",
+      "value": [
+        "70F11C087765"
+      ],
+      "enabled": true
+    },
+    {
+      "key": "botonesDeshabilitados",
+      "value": [
+        "70F11C0876FA",
+        "MD0100000001",
+        "MD0300000001"
+      ],
+      "enabled": true
+    },
+    {
+      "key": "marcas",
+      "value": [
+        1,
+        10,
+        13,
+        22
+      ],
+      "enabled": true
+    },
+    {
+      "key": "listaColecciones",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "nextCollectionId",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}
