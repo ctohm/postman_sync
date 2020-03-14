@@ -44,3 +44,4 @@ nodemon.json
 newman/*
 !newman/.gitignore
 !newman/COLLECTION*.json
+json_environments/*
