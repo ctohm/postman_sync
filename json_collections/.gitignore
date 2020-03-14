@@ -1,0 +1,4 @@
+# This folder is just meant to store transient files to handle collections
+*
+!in_process
+!.gitignore
