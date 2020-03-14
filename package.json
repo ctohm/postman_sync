@@ -33,6 +33,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "api-spec-converter": "^2.11.0",
     "bluebird": "^3.7.2",
     "chalk": "^3.0.0",
     "debug": "^4.1.1",
@@ -46,6 +47,6 @@
     "postman-collection": "^3.5.5",
     "swagger2-postman2-parser": "^1.0.5",
     "tv4": "^1.3.0",
-    "yaml": "^1.7.2"
+    "yaml": "^1.8.2"
   }
 }
