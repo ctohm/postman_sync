@@ -1,0 +1,5 @@
+# This folder is just meant to store transient files to handle specs transformations
+*
+!swagger
+!postman
+!.gitignore
