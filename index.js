@@ -1,5 +1,5 @@
 const path = require('path'),
-  downloadPostman = require(path.resolve(`${__dirname}/lib/download.js`)),
+  downloadFromPostman = require(path.resolve(`${__dirname}/lib/download.js`)),
   exportToPostman = require(path.resolve(
     `${__dirname}/lib/export_to_postman.js`
   )),
@@ -7,16 +7,19 @@ const path = require('path'),
   openApiToJsonSchema = require(path.resolve(
     `${__dirname}/lib/openapi_to_jsonschema.js`
   )),
+  normalizeSwagger = require(path.resolve(
+    `${__dirname}/lib/normalize_swagger.js`
+  )),
   uploadToPostman = require(path.resolve(`${__dirname}/lib/upload.js`)),
   pmSyncCli = require(`${__dirname}/lib/cli.js`);
 
-exports.downloadPostman = downloadPostman;
-exports.exportToPostman = exportToPostman;
-exports.inspectCollections = inspectCollections;
-exports.uploadToPostman = uploadToPostman;
-exports.openApiToJsonSchema = openApiToJsonSchema;
-
 module.exports = pmSyncCli;
+module.exports.normalizeSwagger = normalizeSwagger;
+module.exports.downloadFromPostman = downloadFromPostman;
+module.exports.exportToPostman = exportToPostman;
+module.exports.inspectCollections = inspectCollections;
+module.exports.uploadToPostman = uploadToPostman;
+module.exports.openApiToJsonSchema = openApiToJsonSchema;
 
 if (require.main === module) {
   // Just an example to run the module
@@ -28,8 +31,8 @@ if (require.main === module) {
     }),
     pkgVersion = require(`${__dirname}/package.json`),
     Config = require(path.resolve(`${__dirname}/lib/config.js`))(
-      process.env,
-      pkgVersion.version
+      {API_VERSION: pkgVersion.version, ...process.env},
+      __filename
     );
 
   pmSyncCli(Config)
