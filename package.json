@@ -15,14 +15,11 @@
     "generate_openapi:json": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=json specs/swagger/swagger-spec.json > specs/openapi-spec.json",
     "generate_openapi:yaml": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=yaml specs/swagger/swagger-spec.yaml > specs/openapi-spec.yaml",
     "lint": "eslint server",
-    
     "postman": "yarn postman:download && yarn swagger && yarn postman:export",
-    
     "postman:download": "DEBUG=* node index.js --download",
     "postman:export": "DEBUG=pm_sync:* node index.js --export",
     "postman:inspect": "DEBUG=pm_sync:* node index.js --inspect",
     "postman:upload": "DEBUG=* node index.js --upload",
-
     "postman:inspect_upload": "yarn postman:inspect && yarn postman:upload",
     "reduce": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/postman-reduce.js",
     "swagger": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/normalize_swagger.js && yarn generate_openapi"
