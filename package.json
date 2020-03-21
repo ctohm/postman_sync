@@ -24,6 +24,9 @@
     "reduce": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/postman-reduce.js",
     "swagger": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/normalize_swagger.js && yarn generate_openapi"
   },
+  "bin": {
+    "pm_sync": "./lib/cli.js"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
