@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@apidevtools/json-schema-ref-parser@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@apidevtools/json-schema-ref-parser/-/json-schema-ref-parser-9.0.1.tgz#c0ed0bd21a7397d2d7a83b69565268f2d78f2d7a"
+  integrity sha512-Qsdz0W0dyK84BuBh5KZATWXOtVDXIF2EeNRzpyWblPUeAmnIokwWcwrpAm5pTPMjuWoIQt9C67X3Af1OlL6oSw==
+  dependencies:
+    "@jsdevtools/ono" "^7.1.2"
+    call-me-maybe "^1.0.1"
+    js-yaml "^3.13.1"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -95,6 +104,25 @@
     esutils "^2.0.2"
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
+
+"@bb-cli/json-schema-to-typedef@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@bb-cli/json-schema-to-typedef/-/json-schema-to-typedef-0.4.1.tgz#0699f7efc5cb9cd95054b65dabadb5b2159797ca"
+  integrity sha512-OTGEGRmONJV/HuwqxPaWf8qtalrqrjxvlIUElRAEO4AWeggvq9Y0pabguXht1nCsvfsFBzZv543Fj8joXXH7WA==
+  dependencies:
+    json-schema-ref-parser "^3.1.2"
+
+"@jsdevtools/ono@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.2.tgz#373995bb40a6686589a7fcfec06b0e6e304ef6c6"
+  integrity sha512-qS/a24RA5FEoiJS9wiv6Pwg2c/kiUo3IVUQcfeM9JvsR6pM8Yx+yl/6xWYLckZCT5jpLNhslgjiA8p/XcGyMRQ==
+
+"@openapi-contrib/openapi-schema-to-json-schema@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@openapi-contrib/openapi-schema-to-json-schema/-/openapi-schema-to-json-schema-3.0.0.tgz#957cdd713cd925e67b7d657256d4db3f767bbe9f"
+  integrity sha512-nM0Xn6lCwk1nt/fCWwiLBT1SbH4TlX099bWfz4h5lleW7yeu3SHGDP3knFBDHXPCLwywo5qqOOTVvjTTGf/7lA==
+  dependencies:
+    deep-equal "^1.0.1"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"

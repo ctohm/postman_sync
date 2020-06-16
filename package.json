@@ -28,6 +28,8 @@
     "pm_sync": "./lib/cli.js"
   },
   "devDependencies": {
+    "@bb-cli/json-schema-to-typedef": "^0.4.1",
+    "@openapi-contrib/openapi-schema-to-json-schema": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
@@ -36,6 +38,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^9.0.1",
     "api-spec-converter": "^2.11.0",
     "bluebird": "^3.7.2",
     "chalk": "^3.0.0",
