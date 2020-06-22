@@ -1,6 +1,6 @@
 {
   "name": "@huasofoundries/postman_sync",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This package deals with postman and openapi specs and tests",
   "main": "index.js",
   "repository": {
