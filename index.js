@@ -8,7 +8,7 @@ const path = require('path'),
     `${__dirname}/lib/openapi_to_jsonschema.js`
   )),
   normalizeSwagger = require(path.resolve(
-    `${__dirname}/lib/normalize_swagger.js`
+    `${__dirname}/lib/normalize_swagger`
   )),
   uploadToPostman = require(path.resolve(`${__dirname}/lib/upload.js`)),
   pmSyncCli = require(`${__dirname}/lib/cli.js`);
