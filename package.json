@@ -45,7 +45,7 @@
     "debug": "^4.1.1",
     "deepdash": "^5.1.2",
     "dotenv": "^8.2.0",
-    "dtsgenerator": "^3.0.3",
+    "dtsgenerator": "^3.3.0",
     "js-yaml": "^3.13.1",
     "json-schema-to-typescript": "^9.1.0",
     "lodash": "^4.17.15",
