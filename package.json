@@ -42,7 +42,7 @@
     "api-spec-converter": "^2.11.0",
     "bluebird": "^3.7.2",
     "chalk": "^3.0.0",
-    "debug": "^4.1.1",
+    "debug": "^4.2.0",
     "deepdash": "^5.1.2",
     "dotenv": "^8.2.0",
     "dtsgenerator": "^3.0.3",
