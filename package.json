@@ -50,7 +50,7 @@
     "json-schema-to-typescript": "^9.1.0",
     "lodash": "^4.17.15",
     "mkdirp": "^1.0.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "postman-collection": "^3.6.2",
     "swagger2-postman2-parser": "^1.0.5",
     "tv4": "^1.3.0",
