@@ -48,7 +48,7 @@
     "dtsgenerator": "^3.0.3",
     "js-yaml": "^3.13.1",
     "json-schema-to-typescript": "^9.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "mkdirp": "^1.0.3",
     "node-fetch": "^2.6.0",
     "postman-collection": "^3.6.2",
