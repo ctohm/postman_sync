@@ -31,11 +31,7 @@ nodemon.*
 copy*.sh
 ecosystem.config*
 
-config/oneClickCerts*
-config/*.csr
-config/*.key
-config/*.crt
-config/*firebase*.json
+
 mock.json
 db.json
 lesscache.json
