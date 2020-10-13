@@ -38,7 +38,7 @@
     "prettier": "^2.0.2"
   },
   "dependencies": {
-    "@apidevtools/json-schema-ref-parser": "^9.0.1",
+    "@apidevtools/json-schema-ref-parser": "^9.0.6",
     "api-spec-converter": "^2.11.0",
     "bluebird": "^3.7.2",
     "chalk": "^3.0.0",
