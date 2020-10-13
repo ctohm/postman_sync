@@ -31,11 +31,11 @@
     "@bb-cli/json-schema-to-typedef": "^0.4.1",
     "@openapi-contrib/openapi-schema-to-json-schema": "^3.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
+    "eslint": "~7.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "minimist": "^1.2.5",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.2"
   },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^9.0.1",

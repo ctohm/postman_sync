@@ -12,7 +12,21 @@ const path = require('path'),
   )),
   uploadToPostman = require(path.resolve(`${__dirname}/lib/upload.js`)),
   pmSyncCli = require(`${__dirname}/lib/cli.js`);
+function getSpecPaths(Config) {
+  Config = require(`${__dirname}/lib/config.js`)(Config, __filename);
 
+  const specPaths = require(`${Config.UTILS_FOLDER}/get_spec_paths.js`)(Config),
+    /* Postman Paths */
+    {
+      swaggerYamlFirstExport,
+      swaggerJsonFirstExport,
+      postmanIndentedSpecPath,
+      postmanSpecPath,
+      postmanEnvironmentPath
+    } = specPaths;
+
+  return {postmanSpecPath, postmanEnvironmentPath};
+}
 module.exports = pmSyncCli;
 module.exports.normalizeSwagger = normalizeSwagger;
 module.exports.downloadFromPostman = downloadFromPostman;
@@ -20,7 +34,7 @@ module.exports.exportToPostman = exportToPostman;
 module.exports.inspectCollections = inspectCollections;
 module.exports.uploadToPostman = uploadToPostman;
 module.exports.openApiToJsonSchema = openApiToJsonSchema;
-
+module.exports.getSpecPaths = getSpecPaths;
 if (require.main === module) {
   // Just an example to run the module
   let env_file =
