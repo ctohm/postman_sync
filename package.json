@@ -11,18 +11,17 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "generate_openapi": "yarn generate_openapi:yaml && yarn generate_openapi:json",
-    "generate_openapi:json": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=json specs/swagger/swagger-spec.json > specs/openapi-spec.json",
-    "generate_openapi:yaml": "api-spec-converter --from=swagger_2 --to=openapi_3 --syntax=yaml specs/swagger/swagger-spec.yaml > specs/openapi-spec.yaml",
     "lint": "eslint server",
     "postman": "yarn postman:download && yarn swagger && yarn postman:export",
     "postman:download": "DEBUG=* node index.js --download",
     "postman:export": "DEBUG=pm_sync:* node index.js --export",
     "postman:inspect": "DEBUG=pm_sync:* node index.js --inspect",
+    "jsonschema": "DEBUG=pm_sync:* node index.js --jsonschema",
     "postman:upload": "DEBUG=* node index.js --upload",
     "postman:inspect_upload": "yarn postman:inspect && yarn postman:upload",
-    "reduce": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/postman-reduce.js",
-    "swagger": "echo not_implemented && exit(0) && DEBUG=pm_sync:* node lib/normalize_swagger.js && yarn generate_openapi"
+    "swagger": "DEBUG=pm_sync:* node index.js --swagger output/specs/swagger/swagger.json",
+    "generate_types": "DEBUG=dtsgen dtsgen -o output/specs/json-schema/types.d.ts output/specs/openapi/openapi-schema.json",
+    "swagger:all": "yarn swagger && yarn jsonschema && yarn generate_types"
   },
   "bin": {
     "pm_sync": "./lib/cli.js"
@@ -39,7 +38,7 @@
   },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^9.0.1",
-    "api-spec-converter": "^2.11.0",
+    "@apidevtools/swagger-parser": "^10.0.2",
     "bluebird": "^3.7.2",
     "chalk": "^3.0.0",
     "debug": "^4.1.1",
@@ -51,8 +50,10 @@
     "lodash": "^4.17.15",
     "mkdirp": "^1.0.3",
     "node-fetch": "^2.6.0",
+    "openapi-types": "^7.0.1",
     "postman-collection": "^3.6.2",
     "swagger2-postman2-parser": "^1.0.5",
+    "swagger2openapi": "^7.0.2",
     "tv4": "^1.3.0",
     "wget-improved": "^3.2.0",
     "yaml": "^1.8.2"
