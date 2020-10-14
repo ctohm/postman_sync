@@ -40,7 +40,7 @@
     "@apidevtools/json-schema-ref-parser": "^9.0.1",
     "@apidevtools/swagger-parser": "^10.0.2",
     "bluebird": "^3.7.2",
-    "chalk": "^3.0.0",
+    "chalk": "^4.1.0",
     "debug": "^4.1.1",
     "deepdash": "^5.1.2",
     "dotenv": "^8.2.0",
