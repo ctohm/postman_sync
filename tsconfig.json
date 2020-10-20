@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "keyofStringsOnly": true,
+    "allowJs": true,
+    "checkJs": true,
+    //"declarationDir": "server/types",
+    "declaration": false,
+    //"emitDeclarationOnly": true,
+    "noEmit": true,
+    "outDir": "build",
+
+
+
+  },
+  "exclude": ["build","server/**/*.js","node_modules","server/**/*.d.ts"],
+  "include": ["lib/*.ts"],
+  "outDir":"build"
+
+}
