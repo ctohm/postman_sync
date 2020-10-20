@@ -9,8 +9,7 @@
   },
   "author": "ffflabs <amenadiel@gmail.com>",
   "license": "MIT",
-  "private": true,
-  "scripts": {
+   "scripts": {
     "lint": "eslint server",
     "postman": "yarn postman:download && yarn swagger && yarn postman:export",
     "postman:download": "DEBUG=* node index.js --download",
