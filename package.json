@@ -1,11 +1,11 @@
 {
-  "name": "@huasofoundries/postman_sync",
+  "name": "@ctohm/postman_sync",
   "version": "1.1.0",
   "description": "This package deals with postman and openapi specs and tests",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ffflabs/postman_sync.git"
+    "url": "git@github.com:ctohm/postman_sync.git"
   },
   "author": "ffflabs <amenadiel@gmail.com>",
   "license": "MIT",
@@ -25,6 +25,9 @@
   },
   "bin": {
     "pm_sync": "./lib/cli.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@bb-cli/json-schema-to-typedef": "^0.4.1",
