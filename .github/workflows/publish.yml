@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: 'https://npm.pkg.github.com'
+          scope: '@stohm'
       - run: npm install
       - run: npm publish --access public
         env:
