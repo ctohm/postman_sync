@@ -25,7 +25,7 @@ dev_pm2app.json
 pm2app.json
 sftp-config*
 pm2.*
-config/ogemray*
+
 __pycache__
 nodemon.*
 copy*.sh
