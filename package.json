@@ -18,8 +18,8 @@
     "jsonschema": "DEBUG=pm_sync:* node index.js --jsonschema",
     "postman:upload": "DEBUG=* node index.js --upload",
     "postman:inspect_upload": "yarn postman:inspect && yarn postman:upload",
-    "swagger": "DEBUG=pm_sync:* node index.js --swagger output/specs/swagger/swagger.json",
-    "generate_types": "DEBUG=dtsgen dtsgen -o output/specs/json-schema/types.d.ts output/specs/openapi/openapi-schema.json",
+    "swagger": "DEBUG=pm_sync:* node lib/cli.js --swagger output/specs/swagger/swagger.json",
+    "generate_types": "DEBUG=pm_sync:* node lib/cli.js --dtsgen -o output/specs/json-schema/types.d.ts output/specs/openapi/openapi-schema.json",
     "swagger:all": "yarn swagger && yarn jsonschema && yarn generate_types"
   },
   "bin": {
@@ -42,7 +42,7 @@
     "@typescript-eslint/parser": "^4",
     "babel-eslint": "^10.1.0",
     "eslint": "~7.11.0",
-    "eslint-config-prettier": "^6.14.0",
+    "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-prettier": "^3.1.2",
     "minimist": "^1.2.5",
     "prettier": "^2.0.2",
@@ -57,7 +57,7 @@
     "bluebird": "^3.7.2",
     "chalk": "^4.1.0",
     "debug": "^4.1.1",
-    "deepdash": "^5.3.1",
+    "deepdash": "^5.1.2",
     "dotenv": "^8.2.0",
     "dtsgenerator": "^3.0.3",
     "js-yaml": "^3.13.1",
