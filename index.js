@@ -1,15 +1,10 @@
 const path = require('path'),
-  downloadFromPostman = require(path.resolve(`${__dirname}/lib/download.js`)),
-  exportToPostman = require(path.resolve(
-    `${__dirname}/lib/export_to_postman.js`
-  )),
-  inspectCollections = require(path.resolve(`${__dirname}/lib/inspect.js`)),
-  openApiToJsonSchema = require(path.resolve(
-    `${__dirname}/lib/openapi_to_jsonschema.js`
-  )),
-  normalizeSwagger = require(path.resolve(
-    `${__dirname}/lib/normalize_swagger`
-  )),
+  downloadFromPostman = require(path.resolve(`./lib/download.js`)),
+  exportToPostman = require(path.resolve(`./lib/export_to_postman.js`)),
+  inspectCollections = require(path.resolve(`./lib/inspect.js`)),
+  openApiToJsonSchema = require(path.resolve(`./lib/openapi_to_jsonschema.js`)),
+  normalizeSwagger = require(path.resolve(`./lib/normalize_swagger`)),
+  generateTypes = require(`./lib/dtsgen.js`),
   uploadToPostman = require(path.resolve(`${__dirname}/lib/upload.js`)),
   pmSyncCli = require(`${__dirname}/lib/cli.js`);
 function getSpecPaths(Config) {
@@ -35,7 +30,7 @@ module.exports.inspectCollections = inspectCollections;
 module.exports.uploadToPostman = uploadToPostman;
 module.exports.openApiToJsonSchema = openApiToJsonSchema;
 module.exports.getSpecPaths = getSpecPaths;
-
+module.exports.generateTypes = generateTypes;
 if (require.main === module) {
   // Just an example to run the module
 
