@@ -15,3 +15,4 @@ test/performance/db-monster
 hbs
 *hbs
 views/*
+output
