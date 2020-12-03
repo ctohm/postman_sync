@@ -1,6 +1,6 @@
 {
   "name": "@ctohm/postman_sync",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "This package deals with postman and openapi specs and tests",
   "main": "index.js",
   "repository": {
