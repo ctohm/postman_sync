@@ -28,7 +28,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-this-alias': 0,
     '@typescript-eslint/no-shadow': 1,
-    // @typescript-eslint/explicit-function-return-type": 0,
 
     //  eslint-disable @typescript-eslint/no-unused-vars
     //  eslint-disable @typescript-eslint/explicit-function-return-type

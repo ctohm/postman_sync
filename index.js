@@ -35,7 +35,10 @@ module.exports.inspectCollections = inspectCollections;
 module.exports.uploadToPostman = uploadToPostman;
 module.exports.openApiToJsonSchema = openApiToJsonSchema;
 module.exports.getSpecPaths = getSpecPaths;
+
 if (require.main === module) {
+  // Just an example to run the module
+
   pmSyncCli()
     .then((res) => {
       console.log(res);
