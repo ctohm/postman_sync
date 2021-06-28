@@ -58,7 +58,7 @@
     "@openapi-contrib/openapi-schema-to-json-schema": "^3.0.0",
     "bluebird": "^3.7.2",
     "chalk": "^4.1.0",
-    "commander": "^6.2.0",
+    "commander": "^8.0.0",
     "debug": "^4.1.1",
     "deepdash": "^5.1.2",
     "dotenv": "^8.2.0",
