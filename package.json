@@ -68,7 +68,7 @@
     "json-schema-to-typescript": "^9.1.0",
     "lodash": "^4.17.15",
     "mkdirp": "^1.0.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "openapi-to-postmanv2": "^2.0.0",
     "openapi-types": "^7.0.1",
     "postman-collection": "^3.6.8",
